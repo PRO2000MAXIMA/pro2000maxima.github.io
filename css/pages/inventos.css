@@ -1,0 +1,343 @@
+/**
+ * MAJOTUBEUNAIDEA - Inventos Page Styles
+ * Estilos para la galería de inventos y adaptaciones de taller
+ */
+
+/* ============================================
+   INVENTOS HERO
+   ============================================ */
+.inventos-hero {
+    padding: calc(var(--header-height) + var(--space-10)) 5% var(--space-10);
+    background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-dark) 100%);
+    text-align: center;
+}
+
+.inventos-hero__title {
+    margin-bottom: var(--space-4);
+}
+
+.inventos-hero__title span {
+    color: var(--color-accent);
+}
+
+.inventos-hero__description {
+    font-size: var(--font-size-lg);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ============================================
+   INVENTOS LAYOUT
+   ============================================ */
+.inventos-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: var(--space-8);
+    max-width: var(--container-2xl);
+    margin: 0 auto;
+    padding: 0 5%;
+    align-items: flex-start;
+}
+
+/* ============================================
+   FILTER BAR (Desktop Sidebar)
+   ============================================ */
+.filter-bar {
+    position: sticky;
+    top: calc(var(--header-height) + var(--space-8));
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    padding: var(--space-6);
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    z-index: var(--z-sticky);
+    transition: top var(--transition-base);
+}
+
+.filter-bar__title {
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wider);
+    color: var(--text-muted);
+}
+
+.filter-bar__group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.filter-btn {
+    text-align: left;
+    justify-content: flex-start;
+    padding: var(--space-3) var(--space-5);
+    font-size: var(--font-size-sm);
+}
+
+.header.scrolled+main .filter-bar {
+    top: calc(var(--header-height-scrolled) + var(--space-4));
+}
+
+.filter-btn {
+    font-weight: var(--font-weight-black);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-secondary);
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: var(--transition-base);
+}
+
+.filter-btn:hover {
+    border-color: var(--text-muted);
+    color: var(--text-primary);
+}
+
+.filter-btn.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #FFFFFF;
+    box-shadow: 0 4px 12px var(--color-primary-glow);
+}
+
+/* ============================================
+   INVENTOS GRID
+   ============================================ */
+.inventos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-6);
+    padding: 0 0 var(--space-12) 0;
+}
+
+/* ============================================
+   INVENTO CARD (Extended Project Card)
+   ============================================ */
+.invento-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: var(--transition-spring);
+}
+
+.invento-card:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.invento-card__media {
+    position: relative;
+    aspect-ratio: 16/10;
+    overflow: hidden;
+}
+
+.invento-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+
+.invento-card:hover .invento-card__image {
+    transform: scale(1.05);
+}
+
+.invento-card__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, transparent 50%);
+    opacity: 0;
+    transition: var(--transition-base);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: var(--space-5);
+}
+
+.invento-card:hover .invento-card__overlay {
+    opacity: 1;
+}
+
+.invento-card__category {
+    position: absolute;
+    top: var(--space-4);
+    left: var(--space-4);
+}
+
+.invento-card__body {
+    flex: 1;
+    padding: var(--space-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.invento-card__title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
+}
+
+.invento-card__description {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    line-height: var(--line-height-relaxed);
+    flex: 1;
+}
+
+.invento-card__meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--border-subtle);
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.meta-item__label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wider);
+    color: var(--text-muted);
+}
+
+.meta-item__value {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary);
+}
+
+.invento-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-4) var(--space-5);
+    background: var(--bg-surface);
+    border-top: 1px solid var(--border-subtle);
+}
+
+.invento-card__difficulty {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.invento-card__difficulty-label {
+    font-size: var(--font-size-xs);
+    color: var(--text-muted);
+}
+
+.invento-card__actions {
+    display: flex;
+    gap: var(--space-2);
+}
+
+/* ============================================
+   EMPTY STATE
+   ============================================ */
+.empty-state {
+    text-align: center;
+    padding: var(--space-16) var(--space-5);
+}
+
+.empty-state__icon {
+    font-size: 64px;
+    margin-bottom: var(--space-5);
+    opacity: 0.3;
+}
+
+.empty-state__title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-3);
+    color: var(--text-secondary);
+}
+
+.empty-state__description {
+    color: var(--text-muted);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* ============================================
+   RESPONSIVE INVENTOS
+   ============================================ */
+@media (max-width: 1024px) {
+    .inventos-layout {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .filter-bar {
+        position: sticky;
+        top: var(--header-height);
+        flex-direction: row;
+        width: 100%;
+        border-radius: 0;
+        border-right: 0;
+        border-left: 0;
+        padding: var(--space-4) 5%;
+        background: var(--glass-bg);
+        backdrop-filter: var(--glass-blur);
+    }
+
+    .filter-bar__title {
+        display: none;
+    }
+
+    .filter-bar__group {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: var(--space-2);
+    }
+
+    .filter-btn {
+        padding: var(--space-2) var(--space-4);
+        font-size: var(--font-size-xs);
+    }
+
+    .inventos-grid {
+        padding: var(--space-6) 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-bar {
+        padding: var(--space-2) var(--space-4);
+    }
+
+    .filter-bar__group {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        scroll-snap-type: x mandatory;
+        mask-image: linear-gradient(to right, black 85%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    }
+
+    .filter-bar__group::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter-btn {
+        flex: 0 0 auto;
+        font-size: 10px;
+        scroll-snap-align: start;
+    }
+}

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Inventos de Taller | Majotubeunaidea</title>
+    <meta name="description"
+        content="Galería de inventos, adaptaciones de maquinaria y herramientas personalizadas para el taller de carpintería. Fichas técnicas con materiales, tiempo y dificultad.">
+    <meta name="keywords" content="inventos taller, adaptaciones máquinas, herramientas carpintería, DIY industrial">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/inventos.css">
+</head>
+
+<body>
+    <!-- ============================================
+         HEADER
+         ============================================ -->
+    <header class="header" id="header">
+        <a href="index.html" class="brand">
+            <span class="brand__name">Majotube<span>unaidea</span></span>
+            <span class="brand__tagline">Innovación Digital</span>
+        </a>
+
+        <nav class="nav" id="nav">
+            <a href="index.html" class="nav__link">Inicio</a>
+            <a href="pro2000.html" class="nav__link">PRO-2000 MAXIMA</a>
+            <a href="inventos.html" class="nav__link active">Inventos</a>
+            <a href="ideas.html" class="nav__link">Ideas</a>
+            <a href="index.html#acceso" class="nav__link">Acceso</a>
+        </nav>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Menú de navegación">
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+        </button>
+    </header>
+
+    <!-- ============================================
+         MAIN CONTENT
+         ============================================ -->
+    <main>
+        <!-- Hero -->
+        <section class="inventos-hero">
+            <h1 class="inventos-hero__title">Inventos y <span>Adaptaciones</span></h1>
+            <p class="inventos-hero__description">
+                Soluciones creativas nacidas en el taller. Cada proyecto incluye ficha técnica
+                con materiales, dificultad y documentación técnica exclusiva.
+            </p>
+        </section>
+
+        <!-- Layout System -->
+        <div class="inventos-layout">
+            <!-- Filter Bar -->
+            <aside class="filter-bar">
+                <h2 class="filter-bar__title">Categorías</h2>
+                <div class="filter-bar__group">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="adaptacion">Adaptaciones</button>
+                    <button class="filter-btn" data-filter="herramienta">Herramientas</button>
+                    <button class="filter-btn" data-filter="organizacion">Organización</button>
+                    <button class="filter-btn" data-filter="automatizacion">Automatización</button>
+                    <button class="filter-btn" data-filter="seguridad">Seguridad</button>
+                    <button class="filter-btn" data-filter="oficina">Digitalización</button>
+                    <button class="filter-btn" data-filter="mantenimiento">Mantenimiento</button>
+                </div>
+            </aside>
+
+            <!-- Inventos Content -->
+            <div class="inventos-content">
+                <section class="inventos-grid" id="inventos-grid">
+                    <!-- Inventos will be here -->
+
+                    <!-- Invento 1: Adaptación de Sierra -->
+                    <article class="invento-card" data-category="adaptacion">
+                        <div class="invento-card__media">
+                            <img src="assets/OIG1.XlpYJ3QHQaaD (1).jpg" alt="Adaptación de Sierra de Corte"
+                                class="invento-card__image" data-zoomable>
+                            <span class="badge badge--accent invento-card__category">Adaptación</span>
+                            <div class="invento-card__overlay">
+                                <a href="#" class="btn btn--primary btn--sm">Ver Ficha Completa</a>
+                            </div>
+                        </div>
+
+                        <div class="invento-card__body">
+                            <h3 class="invento-card__title">Tope de Precisión para Sierra de Inglete</h3>
+                            <p class="invento-card__description">
+                                Sistema de tope micrométrico adaptado a una sierra de inglete estándar,
+                                permitiendo repeticiones exactas sin depender del tope original.
+                                Fabricado con perfiles de aluminio sobrante y escala milimétrica impresa.
+                            </p>
+
+                            <div class="invento-card__meta">
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Materiales</span>
+                                    <span class="meta-item__value">Aluminio, Tornillería</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Coste Est.</span>
+                                    <span class="meta-item__value">~25€</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Tiempo</span>
+                                    <span class="meta-item__value">4 horas</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="invento-card__footer">
+                            <div class="invento-card__difficulty">
+                                <span class="invento-card__difficulty-label">Dificultad:</span>
+                                <div class="difficulty">
+                                    <svg class="difficulty__star active" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star active" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="invento-card__actions">
+                                <a href="#" class="btn btn--sm btn--secondary" title="Ver documentación">📄</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Invento 2: Útil de Mecanizado -->
+                    <article class="invento-card" data-category="herramienta">
+                        <div class="invento-card__media">
+                            <img src="assets/OIG3.jpg" alt="Útil de Mecanizado" class="invento-card__image"
+                                data-zoomable>
+                            <span class="badge badge--success invento-card__category">Herramienta</span>
+                            <div class="invento-card__overlay">
+                                <a href="#" class="btn btn--primary btn--sm">Ver Ficha Completa</a>
+                            </div>
+                        </div>
+
+                        <div class="invento-card__body">
+                            <h3 class="invento-card__title">Plantilla de Mecanizado para Bisagras</h3>
+                            <p class="invento-card__description">
+                                Útil fabricado en acero inoxidable para posicionar y mecanizar alojamientos
+                                de bisagras con precisión milimétrica. Compatible con fresadora de mano
+                                y taladro de columna.
+                            </p>
+
+                            <div class="invento-card__meta">
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Materiales</span>
+                                    <span class="meta-item__value">Acero Inox</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Coste Est.</span>
+                                    <span class="meta-item__value">~80€</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Tiempo</span>
+                                    <span class="meta-item__value">1 día</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="invento-card__footer">
+                            <div class="invento-card__difficulty">
+                                <span class="invento-card__difficulty-label">Dificultad:</span>
+                                <div class="difficulty">
+                                    <svg class="difficulty__star active" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star active" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star active" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star active" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="invento-card__actions">
+                                <a href="#" class="btn btn--sm btn--secondary" title="Ver documentación">📄</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Invento 3: Sistema de Almacenaje -->
+                    <article class="invento-card" data-category="organizacion">
+                        <div class="invento-card__media">
+                            <img src="assets/PRO.jpg" alt="Sistema de Almacenaje" class="invento-card__image"
+                                data-zoomable>
+                            <span class="badge invento-card__category">Organización</span>
+                            <div class="invento-card__overlay">
+                                <a href="#" class="btn btn--primary btn--sm">Ver Ficha Completa</a>
+                            </div>
+                        </div>
+
+                        <div class="invento-card__body">
+                            <h3 class="invento-card__title">Estantería Modular para Perfiles</h3>
+                            <p class="invento-card__description">
+                                Sistema de estanterías diseñado específicamente para almacenar barras de
+                                perfiles de hasta 6.5m. Permite acceso lateral y visual rápido.
+                                Construcción con tubo estructural y perfiles reciclados.
+                            </p>
+
+                            <div class="invento-card__meta">
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Materiales</span>
+                                    <span class="meta-item__value">Tubo 40x40</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Coste Est.</span>
+                                    <span class="meta-item__value">~150€</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Tiempo</span>
+                                    <span class="meta-item__value">2 días</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="invento-card__footer">
+                            <div class="invento-card__difficulty">
+                                <span class="invento-card__difficulty-label">Dificultad:</span>
+                                <div class="difficulty">
+                                    <svg class="difficulty__star active" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star active" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="invento-card__actions">
+                                <a href="#" class="btn btn--sm btn--secondary" title="Ver documentación">📄</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Invento 4: Mesa de Ensamblaje -->
+                    <article class="invento-card" data-category="adaptacion">
+                        <div class="invento-card__media">
+                            <img src="assets/PRO2.jpg" alt="Mesa de Ensamblaje" class="invento-card__image"
+                                data-zoomable>
+                            <span class="badge badge--accent invento-card__category">Adaptación</span>
+                            <div class="invento-card__overlay">
+                                <a href="#" class="btn btn--primary btn--sm">Ver Ficha Completa</a>
+                            </div>
+                        </div>
+
+                        <div class="invento-card__body">
+                            <h3 class="invento-card__title">Mesa de Ensamblaje con Topes Ajustables</h3>
+                            <p class="invento-card__description">
+                                Mesa de trabajo con sistema de carriles y topes repositionables para
+                                ensamblaje rápido de marcos. Superficie de trabajo de 3x1.5m con
+                                capacidad para piezas de gran formato.
+                            </p>
+
+                            <div class="invento-card__meta">
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Materiales</span>
+                                    <span class="meta-item__value">Acero, MDF</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Coste Est.</span>
+                                    <span class="meta-item__value">~400€</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Tiempo</span>
+                                    <span class="meta-item__value">1 semana</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="invento-card__footer">
+                            <div class="invento-card__difficulty">
+                                <span class="invento-card__difficulty-label">Dificultad:</span>
+                                <div class="difficulty">
+                                    <svg class="difficulty__star active" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star active" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star active" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="invento-card__actions">
+                                <a href="#" class="btn btn--sm btn--secondary" title="Ver documentación">📄</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Invento 5: Soporte de Cristales -->
+                    <article class="invento-card" data-category="organizacion">
+                        <div class="invento-card__media">
+                            <img src="capturas_taller/Diagrama_Cristal_ATICO_Hoja_1_20260207_122534_320162d9.png"
+                                alt="Soporte de Cristales" class="invento-card__image" data-zoomable>
+                            <span class="badge invento-card__category">Organización</span>
+                            <div class="invento-card__overlay">
+                                <a href="#" class="btn btn--primary btn--sm">Ver Ficha Completa</a>
+                            </div>
+                        </div>
+
+                        <div class="invento-card__body">
+                            <h3 class="invento-card__title">Caballete para Cristales de Gran Formato</h3>
+                            <p class="invento-card__description">
+                                Soporte inclinado con protección de goma para almacenar cristales de
+                                hasta 3m de altura. Sistema de separadores para evitar contacto entre vidrios.
+                            </p>
+
+                            <div class="invento-card__meta">
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Materiales</span>
+                                    <span class="meta-item__value">Tubo, Goma</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Coste Est.</span>
+                                    <span class="meta-item__value">~60€</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Tiempo</span>
+                                    <span class="meta-item__value">3 horas</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="invento-card__footer">
+                            <div class="invento-card__difficulty">
+                                <span class="invento-card__difficulty-label">Dificultad:</span>
+                                <div class="difficulty">
+                                    <svg class="difficulty__star active" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="invento-card__actions">
+                                <a href="#" class="btn btn--sm btn--secondary" title="Ver documentación">📄</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Invento 6: Automatización -->
+                    <article class="invento-card" data-category="automatizacion">
+                        <div class="invento-card__media">
+                            <img src="IMAGENES/OPTIMIZACION.png" alt="Sistema Automatizado" class="invento-card__image"
+                                data-zoomable>
+                            <span class="badge badge--warning invento-card__category">Automatización</span>
+                            <div class="invento-card__overlay">
+                                <a href="#" class="btn btn--primary btn--sm">Ver Ficha Completa</a>
+                            </div>
+                        </div>
+
+                        <div class="invento-card__body">
+                            <h3 class="invento-card__title">Sistema de Etiquetado Automático</h3>
+                            <p class="invento-card__description">
+                                Integración de impresora de etiquetas con PRO-2000 para generar
+                                automáticamente etiquetas de identificación de piezas cortadas.
+                                Conexión directa al módulo de optimización.
+                            </p>
+
+                            <div class="invento-card__meta">
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Materiales</span>
+                                    <span class="meta-item__value">Impresora, SW</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Coste Est.</span>
+                                    <span class="meta-item__value">~200€</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Tiempo</span>
+                                    <span class="meta-item__value">2 días</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="invento-card__footer">
+                            <div class="invento-card__difficulty">
+                                <span class="invento-card__difficulty-label">Dificultad:</span>
+                                <div class="difficulty">
+                                    <svg class="difficulty__star active" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star active" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star active" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star active" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                    <svg class="difficulty__star active" viewBox="0 0 20 20">
+                                        <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="invento-card__actions">
+                                <a href="#" class="btn btn--sm btn--secondary" title="Ver documentación">📄</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Invento 7: Seguridad -->
+                    <article class="invento-card" data-category="seguridad">
+                        <div class="invento-card__media">
+                            <img src="assets/OIG1.XlpYJ3QHQaaD (1).jpg" alt="Protección para Tronzadora"
+                                class="invento-card__image" data-zoomable>
+                            <span class="badge badge--error invento-card__category">Seguridad</span>
+                            <div class="invento-card__overlay">
+                                <a href="#" class="btn btn--primary btn--sm">Ver Medidas</a>
+                            </div>
+                        </div>
+                        <div class="invento-card__body">
+                            <h3 class="invento-card__title">Protector Acrílico para Tronzadora</h3>
+                            <p class="invento-card__description">
+                                Pantalla abatible transparente con sensor magnético de parada automática.
+                                Protección total contra proyecciones de viruta sin perder visibilidad.
+                            </p>
+                            <div class="invento-card__meta">
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Certificación</span>
+                                    <span class="meta-item__value">CE Adapt.</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Coste Est.</span>
+                                    <span class="meta-item__value">~45€</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Invento 8: Digitalización -->
+                    <article class="invento-card" data-category="oficina">
+                        <div class="invento-card__media">
+                            <img src="IMAGENES/DESIGNER.png" alt="Terminal de Taller" class="invento-card__image"
+                                data-zoomable>
+                            <span class="badge badge--info invento-card__category">Digitalización</span>
+                            <div class="invento-card__overlay">
+                                <a href="#" class="btn btn--primary btn--sm">Configurar</a>
+                            </div>
+                        </div>
+                        <div class="invento-card__body">
+                            <h3 class="invento-card__title">Terminal Industrial Low-Cost</h3>
+                            <p class="invento-card__description">
+                                Estación de consulta de planos y partes de taller usando una Raspberry Pi
+                                y monitor reciclado. Conexión directa con PRO-2000.
+                            </p>
+                            <div class="invento-card__meta">
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Hardware</span>
+                                    <span class="meta-item__value">RPi 4</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Software</span>
+                                    <span class="meta-item__value">Linux OS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Invento 9: Mantenimiento -->
+                    <article class="invento-card" data-category="mantenimiento">
+                        <div class="invento-card__media">
+                            <img src="assets/OIG3.jpg" alt="Grasa Específica" class="invento-card__image" data-zoomable>
+                            <span class="badge badge--warning invento-card__category">Mantenimiento</span>
+                            <div class="invento-card__overlay">
+                                <a href="#" class="btn btn--primary btn--sm">Plan Anual</a>
+                            </div>
+                        </div>
+                        <div class="invento-card__body">
+                            <h3 class="invento-card__title">Sistema de Lubricación Centralizada</h3>
+                            <p class="invento-card__description">
+                                Adaptación de conductos para engrase simultáneo de guías lineales
+                                y husillos en fresadoras CNC. Reduce el tiempo de parada un 70%.
+                            </p>
+                            <div class="invento-card__meta">
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Reducción Falla</span>
+                                    <span class="meta-item__value">40%</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-item__label">Tiempo</span>
+                                    <span class="meta-item__value">4 horas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="footer__copy">© 2026 Majotubeunaidea | Portal de Innovación Técnica en Carpintería</p>
+            <nav class="footer__links">
+                <a href="pro2000.html" class="footer__link">PRO-2000</a>
+                <a href="inventos.html" class="footer__link">Inventos</a>
+                <a href="ideas.html" class="footer__link">Ideas</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="imageModal">
+        <div class="modal__controls">
+            <span class="modal__scale-indicator">100%</span>
+            <button class="modal__btn modal__btn--zoom-out" title="Disminuir (Click derecho o Alt+Click)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" style="width:20px;height:20px;">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+            </button>
+            <button class="modal__btn modal__btn--reset" title="Restablecer (1:1)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" style="width:18px;height:18px;">
+                    <path d="M15 3h6v6"></path>
+                    <path d="M9 21H3v-6"></path>
+                    <path d="M21 3l-7 7"></path>
+                    <path d="M3 21l7-7"></path>
+                </svg>
+            </button>
+            <button class="modal__btn modal__btn--zoom-in" title="Aumentar (Click o Scroll)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" style="width:20px;height:20px;">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+            </button>
+            <span class="modal__close">×</span>
+        </div>
+        <div class="modal__content-wrapper">
+            <img class="modal__content" id="modalImage" alt="Imagen ampliada">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/modules/header.js"></script>
+    <script src="js/modules/modal.js"></script>
+    <script src="js/modules/animations.js"></script>
+    <script src="js/modules/filter.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/admin-local.js"></script>
+</body>
+
+</html>
