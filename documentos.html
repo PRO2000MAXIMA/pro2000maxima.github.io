@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Documentos y Manuales | Majotubeunaidea</title>
+    <meta name="description"
+        content="Recurseros técnicos y manuales para PRO-2000 MAXIMA. Descargue guías de usuario, documentación de perfiles y explicativos técnicos.">
+    <meta name="keywords" content="manuales pro-2000, documentación técnica, guías carpintería, ayuda software">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/ideas.css"> <!-- Reutilizamos el estilo de ideas para las tarjetas -->
+    <link rel="stylesheet" href="css/print.css" media="print">
+
+    <style>
+        .doc-hero {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            padding: var(--space-16) 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .doc-hero__title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-family: var(--font-accent);
+            color: var(--text-primary);
+            margin-bottom: var(--space-4);
+        }
+
+        .doc-hero__title span {
+            color: var(--color-primary);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <a href="index.html" class="brand">
+            <span class="brand__name">Majotube<span>unaidea</span></span>
+            <span class="brand__tagline">Innovación Digital</span>
+        </a>
+
+        <nav class="nav" id="nav">
+            <a href="index.html" class="nav__link">Inicio</a>
+            <a href="pro2000.html" class="nav__link">PRO-2000 MAXIMA</a>
+            <a href="inventos.html" class="nav__link">Inventos</a>
+            <a href="ideas.html" class="nav__link">Ideas</a>
+            <a href="documentos.html" class="nav__link active">Documentos</a>
+        </nav>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Menú de navegación">
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+        </button>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="doc-hero">
+            <h1 class="doc-hero__title">Documentos y <span>Manuales</span></h1>
+            <p class="ideas-hero__description">
+                Todo el soporte técnico que necesitas. Guías paso a paso, manuales de usuario
+                y documentación técnica descargable para PRO-2000 MAXIMA.
+            </p>
+        </section>
+
+        <!-- Docs Grid -->
+        <section class="ideas-section">
+            <div class="ideas-grid">
+
+                <!-- Doc 1: Manual de Usuario -->
+                <article class="idea-card idea-card--process">
+                    <div class="idea-card__header">
+                        <span class="badge badge--primary">Manual de Usuario</span>
+                        <span class="idea-card__icon">📖</span>
+                    </div>
+                    <h3 class="idea-card__title">Guía de Inicio Rápido PRO-2000</h3>
+                    <p class="idea-card__description">
+                        Instrucciones básicas para la instalación, configuración inicial y la creación de su primera
+                        obra.
+                        Ideal para nuevos usuarios.
+                    </p>
+                    <a href="#" class="btn btn--sm btn--primary" style="margin-top: var(--space-4);">Descargar PDF</a>
+                </article>
+
+                <!-- Doc 2: Manual Designer -->
+                <article class="idea-card idea-card--technique">
+                    <div class="idea-card__header">
+                        <span class="badge badge--accent">Técnico</span>
+                        <span class="idea-card__icon">📐</span>
+                    </div>
+                    <h3 class="idea-card__title">Manual del Módulo Designer</h3>
+                    <p class="idea-card__description">
+                        Documentación detallada sobre el uso del motor de diseño 2D, inserción de perfiles,
+                        fórmulas y optimización de materiales.
+                    </p>
+                    <a href="#" class="btn btn--sm btn--primary" style="margin-top: var(--space-4);">Descargar PDF</a>
+                </article>
+
+                <!-- Doc 3: Configuración de Base de Datos -->
+                <article class="idea-card idea-card--tip">
+                    <div class="idea-card__header">
+                        <span class="badge badge--success">Soporte</span>
+                        <span class="idea-card__icon">⚙️</span>
+                    </div>
+                    <h3 class="idea-card__title">Guía de Mantenimiento de Datos</h3>
+                    <p class="idea-card__description">
+                        Cómo realizar copias de seguridad correctamente, migrar datos entre equipos y
+                        gestionar el inventario de accesorios.
+                    </p>
+                    <a href="#" class="btn btn--sm btn--primary" style="margin-top: var(--space-4);">Descargar PDF</a>
+                </article>
+
+                <!-- Doc 4: Video Tutoriales -->
+                <article class="idea-card idea-card--process">
+                    <div class="idea-card__header">
+                        <span class="badge badge--primary">Video</span>
+                        <span class="idea-card__icon">🎥</span>
+                    </div>
+                    <h3 class="idea-card__title">Explicativos en Video</h3>
+                    <p class="idea-card__description">
+                        Acceda a nuestra lista de reproducción con tutoriales visuales sobre las funciones
+                        más avanzadas del software.
+                    </p>
+                    <a href="#" class="btn btn--sm btn--primary" style="margin-top: var(--space-4);">Ver en YouTube</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="ideas-cta">
+            <div class="ideas-cta__box">
+                <h2 class="ideas-cta__title">¿No encuentra lo que busca?</h2>
+                <p class="ideas-cta__description">
+                    Si necesita un manual específico o tiene dificultades técnicas,
+                    nuestro equipo de soporte le ayudará encantado.
+                </p>
+                <a href="mailto:pro2000maxima@gmail.com" class="btn btn--primary btn--lg">
+                    Contactar con Soporte Técnico
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="footer__copy">© 2026 Majotubeunaidea | Portal de Innovación Técnica en Carpintería</p>
+            <nav class="footer__links">
+                <a href="pro2000.html" class="footer__link">PRO-2000</a>
+                <a href="inventos.html" class="footer__link">Inventos</a>
+                <a href="ideas.html" class="footer__link">Ideas</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/modules/header.js"></script>
+    <script src="js/modules/animations.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -40,7 +40,7 @@
             <a href="pro2000.html" class="nav__link active">PRO-2000 MAXIMA</a>
             <a href="inventos.html" class="nav__link">Inventos</a>
             <a href="ideas.html" class="nav__link">Ideas</a>
-            <a href="#acceso" class="nav__link">Acceso</a>
+            <a href="documentos.html" class="nav__link">Documentos</a>
         </nav>
 
         <button class="nav-toggle" id="nav-toggle" aria-label="Menú de navegación">
@@ -65,7 +65,7 @@
                     Versión actual: <strong>v7.3.1</strong> &nbsp;|&nbsp; Febrero 2026
                 </div>
                 <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
-                    <a href="#acceso" class="btn btn--primary btn--lg">Solicitar Demo</a>
+                    <a href="#acceso" class="btn btn--primary btn--lg">Solicitar Más Información</a>
                     <a href="#demo" class="btn btn--secondary btn--lg">Ver Características</a>
                 </div>
             </div>
@@ -214,28 +214,28 @@
             </div>
         </section>
 
-        <!-- Access & License Section -->
-        <section class="download-section" id="acceso">
+        <!-- Support / Manuals Section -->
+        <section class="download-section">
             <div class="download-box">
-                <span class="badge badge--accent" style="margin-bottom: var(--space-4);">Software Profesional</span>
-                <h2>Licencia y Acceso PRO-2000</h2>
+                <span class="badge badge--accent" style="margin-bottom: var(--space-4);">Soporte y Recursos</span>
+                <h2>¿Necesita más información?</h2>
                 <p class="download-box__description">
-                    PRO-2000 MAXIMA es una herramienta avanzada para el taller profesional.
-                    El acceso está reservado a usuarios con licencia activa.
+                    Estamos a su disposición para resolver cualquier duda técnica sobre la integración de PRO-2000 en su
+                    taller.
+                    Solicite una atención personalizada o consulte nuestros manuales.
                 </p>
 
                 <div class="changelog">
                     <h4 class="changelog__title">Últimas Mejoras</h4>
                     <div class="changelog__list">
-                        <span class="changelog__item">Optimización crítica del motor de cálculo</span>
-                        <span class="changelog__item">Gestión avanzada de stock y pedidos</span>
-                        <span class="changelog__item">Módulo de diseño paramétrico 2D/3D</span>
+                        <!-- Se carga dinámicamente desde versions.json -->
+                        <span class="changelog__item">Cargando mejoras...</span>
                     </div>
                 </div>
 
                 <div class="hero__actions" style="margin-top: var(--space-6);">
-                    <a href="mailto:info@tu-email.com" class="btn btn--primary btn--lg">Solicitar Demo / Presupuesto</a>
-                    <a href="#" class="btn btn--secondary btn--lg">Área de Clientes</a>
+                    <a href="mailto:pro2000maxima@gmail.com" class="btn btn--primary btn--lg">Contactar con Soporte</a>
+                    <a href="documentos.html" class="btn btn--secondary btn--lg">Ver Manuales y Documentos</a>
                 </div>
             </div>
         </section>
@@ -291,6 +291,7 @@
 
     <!-- Scripts -->
     <script src="js/modules/header.js"></script>
+    <script src="js/modules/version_loader.js"></script>
     <script src="js/modules/modal.js"></script>
     <script src="js/modules/animations.js"></script>
     <script src="js/modules/filter.js"></script>
