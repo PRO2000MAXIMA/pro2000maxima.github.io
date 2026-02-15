@@ -1,10 +1,10 @@
 [
     {
+        "title": "Preparación de Perfiles en Lote",
+        "description": "En lugar de cortar perfil por perfil según la lista de optimización, agrupa los cortes por referencia de perfil. Primero todos los marcos, luego todas las hojas. Reduce los cambios de barra y el tiempo de preparación de la sierra.",
         "category_slug": "process",
         "category_label": "Proceso",
         "icon": "🔄",
-        "title": "Preparación de Perfiles en Lote",
-        "description": "En lugar de cortar perfil por perfil según la lista de optimización, agrupa los cortes por referencia de perfil. Primero todos los marcos, luego todas las hojas. Reduce los cambios de barra y el tiempo de preparación de la sierra.",
         "tags": [
             "Producción",
             "Corte",
@@ -12,11 +12,11 @@
         ]
     },
     {
+        "title": "Sellado de Esquinas con Doble Pasada",
+        "description": "Para marcos de alta exposición (zonas costeras o industriales), aplica una primera pasada fina de silicona en la unión, deja curar 10 minutos, y luego aplica la pasada definitiva. La primera capa actúa como imprimación mejorando la adherencia.",
         "category_slug": "technique",
         "category_label": "Técnica",
         "icon": "🔧",
-        "title": "Sellado de Esquinas con Doble Pasada",
-        "description": "Para marcos de alta exposición (zonas costeras o industriales), aplica una primera pasada fina de silicona en la unión, deja curar 10 minutos, y luego aplica la pasada definitiva. La primera capa actúa como imprimación mejorando la adherencia.",
         "tags": [
             "Ensamblaje",
             "Estanqueidad",
@@ -24,33 +24,33 @@
         ]
     },
     {
+        "title": "Marca de Orientación en Perfiles",
+        "description": "Antes de desplazar los perfiles a la zona de ensamblaje, marca con rotulador permanente una pequeña flecha indicando 'arriba' o 'exterior'. Evita errores de montaje en perfiles simétricos como guías de persiana.",
         "category_slug": "tip",
         "category_label": "Tip",
         "icon": "💡",
-        "title": "Marca de Orientación en Perfiles",
-        "description": "Antes de desplazar los perfiles a la zona de ensamblaje, marca con rotulador permanente una pequeña flecha indicando 'arriba' o 'exterior'. Evita errores de montaje en perfiles simétricos como guías de persiana.",
         "tags": [
             "Organización",
             "Prevención"
         ]
     },
     {
+        "title": "Check-list Pre-Instalación",
+        "description": "Crea una lista de verificación que el operario completa antes de cargar la furgoneta: ¿herrajes montados? ¿acristalamientos? ¿tornillería y anclajes? ¿silicona del color correcto? Reduce viajes de vuelta al taller por material olvidado.",
         "category_slug": "process",
         "category_label": "Proceso",
         "icon": "📋",
-        "title": "Check-list Pre-Instalación",
-        "description": "Crea una lista de verificación que el operario completa antes de cargar la furgoneta: ¿herrajes montados? ¿acristalamientos? ¿tornillería y anclajes? ¿silicona del color correcto? Reduce viajes de vuelta al taller por material olvidado.",
         "tags": [
             "Logística",
             "Control"
         ]
     },
     {
+        "title": "Ajuste de Bisagras en Frío",
+        "description": "En días fríos (<10°C), el aluminio se contrae. Si la hoja roza, no ajustes las bisagras inmediatamente. Espera a que la temperatura se estabilice. Si el ajuste es urgente, aplica calor con decapador en el marco antes de regular.",
         "category_slug": "technique",
         "category_label": "Técnica",
         "icon": "🎯",
-        "title": "Ajuste de Bisagras en Frío",
-        "description": "En días fríos (<10°C), el aluminio se contrae. Si la hoja roza, no ajustes las bisagras inmediatamente. Espera a que la temperatura se estabilice. Si el ajuste es urgente, aplica calor con decapador en el marco antes de regular.",
         "tags": [
             "Instalación",
             "Temperatura",
@@ -58,22 +58,22 @@
         ]
     },
     {
+        "title": "Fotografía de Estado Previo",
+        "description": "Antes de comenzar cualquier instalación, fotografía el hueco y alrededores. Si hay daños previos en la pared o acabados, tendrás documentación. También sirve para referencias de medidas si surge alguna duda durante el montaje.",
         "category_slug": "tip",
         "category_label": "Tip",
         "icon": "📸",
-        "title": "Fotografía de Estado Previo",
-        "description": "Antes de comenzar cualquier instalación, fotografía el hueco y alrededores. Si hay daños previos en la pared o acabados, tendrás documentación. También sirve para referencias de medidas si surge alguna duda durante el montaje.",
         "tags": [
             "Documentación",
             "Protección"
         ]
     },
     {
+        "title": "Mantenimiento Preventivo de Sierra",
+        "description": "Cada 500 cortes o semanalmente: limpia la guía del disco, verifica el ángulo 0° con escuadra de precisión, comprueba el estado de la arandela de par. Un disco descentrado genera rebabas y acorta la vida útil.",
         "category_slug": "process",
         "category_label": "Proceso",
         "icon": "⚙️",
-        "title": "Mantenimiento Preventivo de Sierra",
-        "description": "Cada 500 cortes o semanalmente: limpia la guía del disco, verifica el ángulo 0° con escuadra de precisión, comprueba el estado de la arandela de par. Un disco descentrado genera rebabas y acorta la vida útil.",
         "tags": [
             "Mantenimiento",
             "Maquinaria",
@@ -81,11 +81,11 @@
         ]
     },
     {
+        "title": "Prensa de Esquinas con Sargentos",
+        "description": "Si no tienes prensa de esquinas dedicada, usa dos sargentos en ángulo recto con tacos de madera como protectores. Ajusta primero el horizontal, luego el vertical. Mantén presión mínima 2 minutos para adhesivos de contacto.",
         "category_slug": "technique",
         "category_label": "Técnica",
         "icon": "🏗️",
-        "title": "Prensa de Esquinas con Sargentos",
-        "description": "Si no tienes prensa de esquinas dedicada, usa dos sargentos en ángulo recto con tacos de madera como protectores. Ajusta primero el horizontal, luego el vertical. Mantén presión mínima 2 minutos para adhesivos de contacto.",
         "tags": [
             "Ensamblaje",
             "Alternativa"

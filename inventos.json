@@ -1,10 +1,10 @@
 [
     {
-        "category_slug": "adaptacion",
-        "category_label": "Adaptación",
-        "image": "assets/OIG1.XlpYJ3QHQaaD (1).jpg",
         "title": "Tope de Precisión para Sierra de Inglete",
         "description": "Sistema de tope micrométrico adaptado a una sierra de inglete estándar, permitiendo repeticiones exactas sin depender del tope original. Fabricado con perfiles de aluminio sobrante y escala milimétrica impresa.",
+        "image": "\"C:\\Users\\Mistico\\Documents\\PRO-2000\\majotube-web\\assets\\Actualizar el texto .png\"",
+        "category_slug": "adaptacion",
+        "category_label": "Adaptación",
         "materiales": "Aluminio, Tornillería",
         "coste": "~25€",
         "tiempo": "4 horas",
@@ -12,11 +12,11 @@
         "link": "#"
     },
     {
-        "category_slug": "herramienta",
-        "category_label": "Herramienta",
-        "image": "assets/OIG3.jpg",
         "title": "Plantilla de Mecanizado para Bisagras",
         "description": "Útil fabricado en acero inoxidable para posicionar y mecanizar alojamientos de bisagras con precisión milimétrica. Compatible con fresadora de mano y taladro de columna.",
+        "image": "assets/OIG3.jpg",
+        "category_slug": "herramienta",
+        "category_label": "Herramienta",
         "materiales": "Acero Inox",
         "coste": "~80€",
         "tiempo": "1 día",
@@ -24,11 +24,11 @@
         "link": "#"
     },
     {
-        "category_slug": "organizacion",
-        "category_label": "Organización",
-        "image": "assets/PRO.jpg",
         "title": "Estantería Modular para Perfiles",
         "description": "Sistema de estanterías diseñado específicamente para almacenar barras de perfiles de hasta 6.5m. Permite acceso lateral y visual rápido. Construcción con tubo estructural y perfiles reciclados.",
+        "image": "assets/PRO.jpg",
+        "category_slug": "organizacion",
+        "category_label": "Organización",
         "materiales": "Tubo 40x40",
         "coste": "~150€",
         "tiempo": "2 días",
@@ -36,11 +36,11 @@
         "link": "#"
     },
     {
-        "category_slug": "adaptacion",
-        "category_label": "Adaptación",
-        "image": "assets/PRO2.jpg",
         "title": "Mesa de Ensamblaje con Topes Ajustables",
         "description": "Mesa de trabajo con sistema de carriles y topes repositionables para ensamblaje rápido de marcos. Superficie de trabajo de 3x1.5m con capacidad para piezas de gran formato.",
+        "image": "assets/PRO2.jpg",
+        "category_slug": "adaptacion",
+        "category_label": "Adaptación",
         "materiales": "Acero, MDF",
         "coste": "~400€",
         "tiempo": "1 semana",
@@ -48,11 +48,11 @@
         "link": "#"
     },
     {
-        "category_slug": "organizacion",
-        "category_label": "Organización",
-        "image": "capturas_taller/Diagrama_Cristal_ATICO_Hoja_1_20260207_122534_320162d9.png",
         "title": "Caballete para Cristales",
         "description": "Soporte inclinado con protección de goma para almacenar cristales de hasta 3m de altura. Sistema de separadores para evitar contacto entre vidrios.",
+        "image": "capturas_taller/Diagrama_Cristal_ATICO_Hoja_1_20260207_122534_320162d9.png",
+        "category_slug": "organizacion",
+        "category_label": "Organización",
         "materiales": "Tubo, Goma",
         "coste": "~60€",
         "tiempo": "3 horas",
@@ -60,11 +60,11 @@
         "link": "#"
     },
     {
-        "category_slug": "automatizacion",
-        "category_label": "Automatización",
-        "image": "IMAGENES/OPTIMIZACION.png",
         "title": "Etiquetado Automático",
         "description": "Integración de impresora de etiquetas con PRO-2000 para generar automáticamente etiquetas de identificación de piezas cortadas. Conexión directa al módulo de optimización.",
+        "image": "IMAGENES/OPTIMIZACION.png",
+        "category_slug": "automatizacion",
+        "category_label": "Automatización",
         "materiales": "Impresora, SW",
         "coste": "~200€",
         "tiempo": "2 días",
@@ -72,11 +72,11 @@
         "link": "#"
     },
     {
-        "category_slug": "oficina",
-        "category_label": "Digitalización",
-        "image": "IMAGENES/DESIGNER.png",
         "title": "Terminal Industrial Low-Cost",
         "description": "Estación de consulta de planos y partes de taller usando una Raspberry Pi y monitor reciclado. Conexión directa con PRO-2000.",
+        "image": "IMAGENES/DESIGNER.png",
+        "category_slug": "oficina",
+        "category_label": "Digitalización",
         "materiales": "RPi 4",
         "coste": "~100€",
         "tiempo": "2 días",
