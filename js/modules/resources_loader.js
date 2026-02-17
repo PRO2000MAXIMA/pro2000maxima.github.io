@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             <h3 class="idea-card__title">${item.title}</h3>
             <p class="idea-card__description">${item.description}</p>
             <a href="${item.url}" target="_blank" class="btn btn--sm btn--${btnClass}" style="margin-top: var(--space-4); ${isVideo ? 'background: #f8fafc; color: #1e293b; border: 1px solid #e2e8f0;' : ''}">
-                ${isVideo ? '<span style="margin-right:8px;">▶</span> Reproducir Vídeo' : 'Descargar PDF'}
+                ${isVideo ? '<span style="margin-right:8px;">▶</span> Reproducir Vídeo' : 'Ver / Abrir Documento'}
             </a>
         `;
         return article;
