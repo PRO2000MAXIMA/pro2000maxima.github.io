@@ -26,7 +26,13 @@ body {
     background-color: var(--bg-dark);
     overflow-x: hidden;
     min-height: 100vh;
+    /* iOS Momentum Scrolling & Tap Highlight */
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: var(--tap-highlight);
+    /* Safe Area Spacing */
+    padding-bottom: var(--safe-bottom);
 }
+
 
 /* === BACKGROUND AMBIENT EFFECTS === */
 body::before {

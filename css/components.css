@@ -11,23 +11,25 @@
     top: 0;
     left: 0;
     right: 0;
-    height: var(--header-height);
-    padding: 0 5%;
+    height: calc(var(--header-height) + var(--safe-top));
+    padding: var(--safe-top) 5% 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgba(5, 5, 5, 0.8);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-subtle);
     z-index: var(--z-fixed);
     transition: var(--transition-base);
 }
 
 .header.scrolled {
-    height: var(--header-height-scrolled);
+    height: calc(var(--header-height-scrolled) + var(--safe-top));
     background: rgba(5, 5, 5, 0.95);
     border-bottom-color: var(--border-default);
 }
+
 
 .brand {
     display: flex;
@@ -95,17 +97,25 @@
 .nav-toggle {
     display: none;
     flex-direction: column;
-    gap: 5px;
+    justify-content: center;
+    gap: 6px;
+    width: 44px;
+    height: 44px;
     padding: var(--space-2);
     cursor: pointer;
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.05);
 }
+
 
 .nav-toggle__bar {
     width: 24px;
     height: 2px;
     background: var(--text-primary);
     transition: var(--transition-fast);
+    border-radius: 1px;
 }
+
 
 /* ============================================
    BUTTONS
@@ -164,9 +174,12 @@
 }
 
 .btn--sm {
-    padding: var(--space-2) var(--space-4);
+    padding: var(--space-3) var(--space-5);
     font-size: var(--font-size-xs);
+    min-height: 44px;
+    /* Apple/Android minimum touch target */
 }
+
 
 .btn--icon {
     padding: var(--space-3);
@@ -510,8 +523,8 @@ img[data-zoomable],
 
 .modal__controls {
     position: absolute;
-    top: var(--space-6);
-    right: 5%;
+    top: calc(var(--space-6) + var(--safe-top));
+    right: calc(5% + var(--safe-right));
     display: flex;
     align-items: center;
     gap: var(--space-3);
@@ -521,7 +534,9 @@ img[data-zoomable],
     border-radius: var(--radius-full);
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
+
 
 .modal__scale-indicator {
     font-size: var(--font-size-xs);

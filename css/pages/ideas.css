@@ -4,10 +4,11 @@
  */
 
 .ideas-hero {
-    padding: calc(var(--header-height) + var(--space-12)) 5% var(--space-12);
+    padding: calc(var(--header-height) + var(--safe-top) + var(--space-8)) 5% var(--space-12);
     background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-dark) 100%);
     text-align: center;
 }
+
 
 .ideas-hero__title {
     font-family: var(--font-family-headings);
