@@ -1,8 +1,8 @@
 {
     "latest": {
-        "version": "7.6.4",
+        "version": "v7.6.5",
         "date": "2.4.2026",
-        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.6.4/PRO-2000_v7.6.5_Setup.exe",
+        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.6.5/PRO-2000_v7.6.5_Setup.exe",
         "changelog": [
             "Mejoras en el motor de renderizado de reportes PDF.",
             "Optimización del cálculo de perfiles complementarios.",
