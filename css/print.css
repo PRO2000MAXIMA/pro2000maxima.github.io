@@ -1,0 +1,92 @@
+/**
+ * MAJOTUBEUNAIDEA - Print Styles
+ * Optimización para impresión de fichas técnicas
+ */
+
+@media print {
+
+    /* Ocultar elementos innecesarios */
+    .header,
+    .footer,
+    .filter-bar,
+    .nav-toggle,
+    .btn,
+    .modal {
+        display: none !important;
+    }
+
+    body {
+        background: white !important;
+        color: black !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .container {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    /* Formato de Ficha Técnica */
+    .invento-card {
+        page-break-inside: avoid;
+        border: 2px solid #eee !important;
+        margin-bottom: 2rem;
+        display: block !important;
+        box-shadow: none !important;
+        transform: none !important;
+    }
+
+    .invento-card__media {
+        height: 250px !important;
+    }
+
+    .invento-card__image {
+        filter: grayscale(100%);
+    }
+
+    .invento-card__body {
+        padding: 20px !important;
+    }
+
+    .invento-card__title {
+        color: black !important;
+        font-size: 24pt !important;
+        margin-bottom: 10pt !important;
+    }
+
+    .invento-card__description {
+        color: #333 !important;
+        font-size: 12pt !important;
+    }
+
+    .invento-card__meta {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        border-top: 1pt solid #ccc !important;
+        margin-top: 15pt !important;
+    }
+
+    .meta-item__label {
+        color: #666 !important;
+        font-size: 9pt !important;
+    }
+
+    .meta-item__value {
+        color: black !important;
+        font-size: 11pt !important;
+    }
+
+    /* Branding en la impresión */
+    body::before {
+        content: "MAJOTUBEUNAIDEA - FICHA TÉCNICA DE INNOVACIÓN";
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-size: 10pt;
+        margin-bottom: 20pt;
+        border-bottom: 1pt solid black;
+        padding-bottom: 5pt;
+    }
+}

@@ -1,0 +1,274 @@
+/**
+ * MAJOTUBEUNAIDEA - Inventos Page Styles (v3.0.0)
+ * Rediseño completo de la navegación por categorías y layout
+ */
+
+/* ============================================
+   INVENTOS HERO
+   ============================================ */
+.inventos-hero {
+    padding: calc(var(--header-height) + var(--safe-top) + var(--space-12)) 5% var(--space-8);
+    background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-dark) 100%);
+    text-align: center;
+    position: relative;
+}
+
+.inventos-hero__title {
+    font-size: clamp(2rem, 8vw, 4rem);
+    margin-bottom: var(--space-4);
+}
+
+.inventos-hero__title span {
+    color: var(--color-accent);
+}
+
+.inventos-hero__description {
+    font-size: var(--font-size-lg);
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--text-secondary);
+}
+
+/* ============================================
+   INVENTOS LAYOUT (Unified Column)
+   ============================================ */
+.inventos-layout {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--container-2xl);
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+/* ============================================
+   FILTER BAR (Horizontal & Premium)
+   ============================================ */
+.filter-bar {
+    position: sticky;
+    top: calc(var(--header-height) + var(--safe-top));
+    z-index: calc(var(--z-fixed) - 1);
+    background: rgba(13, 13, 15, 0.8);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: var(--space-4) 0;
+    margin-bottom: var(--space-8);
+    border-bottom: 1px solid var(--border-subtle);
+    transition: var(--transition-base);
+}
+
+/* Offset correction when header is scrolled */
+.header.scrolled+main .filter-bar {
+    top: calc(var(--header-height-scrolled) + var(--safe-top));
+}
+
+.filter-bar__title {
+    display: none;
+    /* Hidden in horizontal layout */
+}
+
+.filter-bar__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-3);
+    overflow-x: auto;
+    scrollbar-width: none;
+    /* Hide scrollbar Firefox */
+    padding: 0 var(--space-4);
+}
+
+.filter-bar__group::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar Chrome/Safari */
+}
+
+.filter-btn {
+    flex: 0 0 auto;
+    padding: var(--space-2) var(--space-6);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: var(--transition-spring);
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--text-muted);
+    color: var(--text-primary);
+    transform: translateY(-1px);
+}
+
+.filter-btn.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: white;
+    box-shadow: 0 4px 15px var(--color-primary-glow);
+}
+
+/* ============================================
+   INVENTOS GRID
+   ============================================ */
+.inventos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: var(--space-8);
+    padding-bottom: calc(var(--space-16) + var(--safe-bottom));
+}
+
+/* ============================================
+   INVENTO CARD
+   ============================================ */
+.invento-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    transition: var(--transition-spring);
+    display: flex;
+    flex-direction: column;
+}
+
+.invento-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-lg);
+}
+
+.invento-card__media {
+    position: relative;
+    aspect-ratio: 16/10;
+    overflow: hidden;
+}
+
+.invento-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+
+.invento-card:hover .invento-card__image {
+    transform: scale(1.08);
+}
+
+.invento-card__category {
+    position: absolute;
+    top: var(--space-4);
+    left: var(--space-4);
+    z-index: 1;
+}
+
+.invento-card__body {
+    padding: var(--space-6);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.invento-card__title {
+    font-size: var(--font-size-xl);
+    color: var(--text-primary);
+}
+
+.invento-card__description {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    line-height: var(--line-height-relaxed);
+    flex: 1;
+}
+
+.invento-card__meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--border-subtle);
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.meta-item__label {
+    font-size: 9px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+}
+
+.meta-item__value {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
+}
+
+.invento-card__footer {
+    padding: var(--space-4) var(--space-6);
+    background: rgba(255, 255, 255, 0.02);
+    border-top: 1px solid var(--border-subtle);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+@media (max-width: 1024px) {
+    .filter-bar__group {
+        justify-content: flex-start;
+        padding-left: 5%;
+        padding-right: 5%;
+        mask-image: linear-gradient(to right, black 80%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+    }
+
+    .inventos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: var(--space-6);
+    }
+}
+
+@media (max-width: 768px) {
+    .inventos-hero {
+        padding-top: calc(var(--header-height) + var(--safe-top) + var(--space-6));
+    }
+
+    .filter-bar {
+        padding: var(--space-2) 0;
+        /* even more compact */
+        margin-bottom: var(--space-4);
+    }
+
+    .filter-btn {
+        padding: var(--space-2) var(--space-4);
+        font-size: 10px;
+        min-height: 36px;
+        /* smaller but still touchable */
+    }
+
+    .inventos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Fix for iOS momentum scrolling on category bar */
+@supports (-webkit-overflow-scrolling: touch) {
+    .filter-bar__group {
+        -webkit-overflow-scrolling: touch;
+    }
+}

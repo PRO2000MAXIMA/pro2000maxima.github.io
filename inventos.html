@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Inventos de Taller | Majotubeunaidea</title>
+    <meta name="description"
+        content="Galería de inventos, adaptaciones de maquinaria y herramientas personalizadas para el taller de carpintería.">
+    <meta name="keywords" content="inventos taller, adaptaciones máquinas, herramientas carpintería, DIY industrial">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/inventos.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <a href="index.html" class="brand">
+            <span class="brand__name">Majotube<span>unaidea</span></span>
+            <span class="brand__tagline">Innovación Digital</span>
+        </a>
+
+        <nav class="nav" id="nav">
+            <a href="index.html" class="nav__link">Inicio</a>
+            <a href="pro2000.html" class="nav__link">PRO-2000 MAXIMA</a>
+            <a href="inventos.html" class="nav__link active">Inventos</a>
+            <a href="ideas.html" class="nav__link">Ideas</a>
+            <a href="documentos.html" class="nav__link">Documentos</a>
+        </nav>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Menú de navegación">
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+        </button>
+    </header>
+
+    <main>
+        <section class="inventos-hero">
+            <h1 class="inventos-hero__title">Inventos y <span>Adaptaciones</span></h1>
+            <p class="inventos-hero__description">
+                Soluciones creativas nacidas en el taller. Fichas técnicas, materiales y dificultad.
+            </p>
+        </section>
+
+        <div class="inventos-layout">
+            <aside class="filter-bar">
+                <h2 class="filter-bar__title">Categorías</h2>
+                <div class="filter-bar__group" id="filter-group">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="adaptacion">Adaptaciones</button>
+                    <button class="filter-btn" data-filter="herramienta">Herramientas</button>
+                    <button class="filter-btn" data-filter="organizacion">Organización</button>
+                    <button class="filter-btn" data-filter="automatizacion">Automatización</button>
+                    <button class="filter-btn" data-filter="oficina">Digitalización</button>
+                </div>
+            </aside>
+
+            <div class="inventos-content">
+                <section class="inventos-grid" id="inventos-grid">
+                    <!-- Cargado dinámicamente desde inventos.json -->
+                    <p style="color: var(--text-secondary); grid-column: 1/-1; text-align: center;">Cargando inventos...
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="footer__copy">© 2026 Majotubeunaidea</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="imageModal">
+        <div class="modal__controls">
+            <span class="modal__scale-indicator">100%</span>
+            <button class="modal__btn modal__btn--zoom-out">🔍-</button>
+            <button class="modal__btn modal__btn--reset">Reset</button>
+            <button class="modal__btn modal__btn--zoom-in">🔍+</button>
+            <span class="modal__close">×</span>
+        </div>
+        <div class="modal__content-wrapper">
+            <img class="modal__content" id="modalImage">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/modules/header.js"></script>
+    <script src="js/modules/inventos_loader.js"></script>
+    <script src="js/modules/modal.js"></script>
+    <script src="js/modules/animations.js"></script>
+    <script src="js/modules/filter.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

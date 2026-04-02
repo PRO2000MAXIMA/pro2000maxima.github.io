@@ -1,0 +1,15 @@
+# Local IDE files
+.vscode/
+.idea/
+*.swp
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp files
+ Nueva carpeta/
+ pagina/
+ *.bak
+ *.old

@@ -1,0 +1,48 @@
+{
+    "manuals": [
+        {
+            "title": "Guía de Inicio Rápido",
+            "description": "Instrucciones básicas para la instalación y configuración inicial del software.",
+            "url": "manuales/PRO-2000_Sistema_Operativo_para_Carpintería (1).pdf",
+            "type": "Manual de Usuario",
+            "icon": "📖"
+        },
+        {
+            "title": "Módulo Designer",
+            "description": "Documentación avanzada sobre el motor de diseño 2D y creación de tipos.",
+            "url": "#",
+            "type": "Técnico",
+            "icon": "📐"
+        },
+        {
+            "title": "Mantenimiento de Datos",
+            "description": "Cómo realizar backups y gestionar el inventario de perfiles y accesorios.",
+            "url": "#",
+            "type": "Soporte",
+            "icon": "⚙️"
+        }
+    ],
+    "videos": [
+        {
+            "title": "Tour por la Interfaz",
+            "description": "Recorrido visual por los módulos y las funciones principales de la v7.3.1.",
+            "url": "https://youtu.be/yo14oGNmaBY",
+            "type": "YouTube",
+            "icon": "📺"
+        },
+        {
+            "title": "Diseño de Especiales",
+            "description": "Aprenda a crear trapecios, arcos y formas complejas en el Designer.",
+            "url": "#",
+            "type": "YouTube",
+            "icon": "🎥"
+        },
+        {
+            "title": "Optimización de Corte",
+            "description": "Técnicas para maximizar el aprovechamiento de material en el taller.",
+            "url": "#",
+            "type": "YouTube",
+            "icon": "🎥"
+        }
+    ]
+}

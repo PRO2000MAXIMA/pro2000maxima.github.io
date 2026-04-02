@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Ideas y Mejoras de Proceso | Majotubeunaidea</title>
+    <meta name="description"
+        content="Conocimiento técnico compartido: mejoras de procesos, técnicas de ensamblaje y buenas prácticas para el taller.">
+    <meta name="keywords" content="mejoras proceso, técnicas ensamblaje, buenas prácticas carpintería, know-how taller">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/ideas.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <a href="index.html" class="brand">
+            <span class="brand__name">Majotube<span>unaidea</span></span>
+            <span class="brand__tagline">Innovación Digital</span>
+        </a>
+
+        <nav class="nav" id="nav">
+            <a href="index.html" class="nav__link">Inicio</a>
+            <a href="pro2000.html" class="nav__link">PRO-2000 MAXIMA</a>
+            <a href="inventos.html" class="nav__link">Inventos</a>
+            <a href="ideas.html" class="nav__link active">Ideas</a>
+            <a href="documentos.html" class="nav__link">Documentos</a>
+        </nav>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Menú de navegación">
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+        </button>
+    </header>
+
+    <main>
+        <section class="ideas-hero">
+            <h1 class="ideas-hero__title">Ideas y <span>Mejoras</span></h1>
+            <p class="ideas-hero__description">
+                Conocimiento técnico compartido. Mejoras de proceso, técnicas de ensamblaje y buenas prácticas.
+            </p>
+        </section>
+
+        <div class="categories-bar">
+            <div class="category-item"><span
+                    class="category-item__dot category-item__dot--process"></span><span>Proceso</span></div>
+            <div class="category-item"><span
+                    class="category-item__dot category-item__dot--technique"></span><span>Ensamblaje</span></div>
+            <div class="category-item"><span class="category-item__dot category-item__dot--tip"></span><span>Tip
+                    Rápido</span></div>
+            <div class="category-item"><span
+                    class="category-item__dot category-item__dot--sales"></span><span>Comercial</span></div>
+            <div class="category-item"><span
+                    class="category-item__dot category-item__dot--office"></span><span>Administración</span></div>
+        </div>
+
+        <section class="ideas-section">
+            <div class="ideas-grid">
+                <!-- Cargado dinámicamente desde ideas.json -->
+                <p style="color: var(--text-secondary); text-align: center; grid-column: 1/-1;">Cargando ideas y
+                    mejoras...</p>
+            </div>
+        </section>
+
+        <section class="ideas-cta">
+            <div class="ideas-cta__box">
+                <span class="badge" style="margin-bottom: var(--space-4);">Comunidad</span>
+                <h2 class="ideas-cta__title">¿Tienes una idea para compartir?</h2>
+                <a href="mailto:pro2000maxima@gmail.com" class="btn btn--primary btn--lg">Enviar mi idea</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="footer__copy">© 2026 Majotubeunaidea</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/modules/header.js"></script>
+    <script src="js/modules/ideas_loader.js"></script>
+    <script src="js/modules/animations.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
