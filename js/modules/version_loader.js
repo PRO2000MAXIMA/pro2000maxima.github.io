@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const VERSION_CONFIG = Object.freeze({
         MONTHS: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
-        EXPECTED_DATE_PARTS: 3
+        DATE_PARTS_COUNT: 3,
+        MONTH_INDEX_OFFSET: 1
     });
 
     const versionLabel = document.querySelector('.pro2000-hero__version strong');
@@ -52,25 +53,39 @@ function updateVersionLabels(versionLabel, dateLabel, latest, config) {
     }
 
     if (dateLabel) {
-        dateLabel.innerHTML = formatVersionDate(latest, config.MONTHS, config.EXPECTED_DATE_PARTS);
+        dateLabel.innerHTML = formatVersionDate(latest, config.MONTHS, config);
     }
 }
 
 /**
  * @param {Object} latest
  * @param {Array<string>} months
- * @param {number} expectedDateParts
+ * @param {Object} config
  * @returns {string}
  */
-function formatVersionDate(latest, months, expectedDateParts) {
-    const dateParts = latest.date.split('-');
-    if (dateParts.length !== expectedDateParts) {
-        return '';
+function formatVersionDate(latest, months, config) {
+    const dateStr = latest.date;
+    let day, month, year;
+
+    const dotParts = dateStr.split('.');
+    if (dotParts.length === config.DATE_PARTS_COUNT) {
+        day = parseInt(dotParts[0], 10);
+        month = parseInt(dotParts[1], 10);
+        year = dotParts[2];
+    } else {
+        const dashParts = dateStr.split('-');
+        if (dashParts.length === config.DATE_PARTS_COUNT) {
+            day = parseInt(dashParts[0], 10);
+            month = parseInt(dashParts[1], 10);
+            year = dashParts[2];
+        } else {
+            return '';
+        }
     }
 
-    const monthIndex = parseInt(dateParts[1], 10) - 1;
-    const monthName = months[monthIndex];
-    return `Versión actual: <strong>v${latest.version}</strong> &nbsp;|&nbsp; ${monthName} ${dateParts[0]}`;
+    const monthIndex = month - config.MONTH_INDEX_OFFSET;
+    const monthName = months[monthIndex] || 'Abril';
+    return `Versión actual: <strong>v${latest.version}</strong> &nbsp;|&nbsp; ${day} de ${monthName} ${year}`;
 }
 
 /**
