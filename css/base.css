@@ -1,9 +1,11 @@
 /**
- * MAJOTUBEUNAIDEA - Base Styles
- * Reset, elementos base y utilidades fundamentales
+ * MAJOTUBEUNAIDEA - Base Styles (Premium Edition v4.0)
+ * Reset, elementos base y utilidades premium
  */
 
-/* === RESET === */
+/* ============================================
+   RESET - Modern & Complete
+   ============================================ */
 *,
 *::before,
 *::after {
@@ -16,6 +18,7 @@ html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-size-adjust: 100%;
 }
 
 body {
@@ -26,30 +29,45 @@ body {
     background-color: var(--bg-dark);
     overflow-x: hidden;
     min-height: 100vh;
-    /* iOS Momentum Scrolling & Tap Highlight */
+    position: relative;
+}
+
+/* iOS Momentum Scrolling & Safe Areas */
+body {
     -webkit-overflow-scrolling: touch;
     -webkit-tap-highlight-color: var(--tap-highlight);
-    /* Safe Area Spacing */
+    padding-top: var(--safe-top);
     padding-bottom: var(--safe-bottom);
 }
 
-
-/* === BACKGROUND AMBIENT EFFECTS === */
+/* ============================================
+   BACKGROUND AMBIENT EFFECTS (Premium)
+   ============================================ */
 body::before {
     content: '';
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:
-        radial-gradient(circle at 0% 0%, rgba(0, 122, 255, 0.08) 0%, transparent 50%),
-        radial-gradient(circle at 100% 100%, rgba(255, 59, 48, 0.05) 0%, transparent 50%);
+    inset: 0;
+    background: var(--gradient-mesh);
     pointer-events: none;
     z-index: -1;
+    opacity: 0.7;
 }
 
-/* === CUSTOM SCROLLBAR === */
+body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 102, 255, 0.15), transparent),
+        radial-gradient(ellipse 60% 40% at 100% 100%, rgba(255, 45, 85, 0.1), transparent);
+    pointer-events: none;
+    z-index: -1;
+    animation: gradientShift 20s ease-in-out infinite alternate;
+}
+
+/* ============================================
+   CUSTOM SCROLLBAR (Premium)
+   ============================================ */
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -60,17 +78,26 @@ body::before {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--bg-elevated);
-    border: 3px solid var(--bg-void);
+    background: linear-gradient(180deg, var(--color-primary), var(--color-primary-dark));
+    border: 2px solid var(--bg-void);
     border-radius: var(--radius-full);
-    transition: var(--transition-fast);
+    transition: var(--transition-base);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--color-primary);
+    background: linear-gradient(180deg, var(--color-primary-light), var(--color-primary));
+    border-width: 1px;
 }
 
-/* === TIPOGRAFÍA BASE === */
+/* Firefox Scrollbar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) var(--bg-void);
+}
+
+/* ============================================
+   TIPOGRAFÍA BASE (Premium)
+   ============================================ */
 h1,
 h2,
 h3,
@@ -87,6 +114,7 @@ h6 {
 h1 {
     font-size: var(--font-size-hero);
     font-weight: var(--font-weight-black);
+    letter-spacing: var(--letter-spacing-tighter);
 }
 
 h2 {
@@ -96,10 +124,12 @@ h2 {
 
 h3 {
     font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
 }
 
 h4 {
     font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
 }
 
 p {
@@ -111,6 +141,7 @@ a {
     color: var(--color-primary);
     text-decoration: none;
     transition: var(--transition-fast);
+    position: relative;
 }
 
 a:hover {
@@ -120,15 +151,20 @@ a:hover {
 strong,
 b {
     font-weight: var(--font-weight-semibold);
+    color: var(--text-primary);
 }
 
-/* === LISTAS === */
+/* ============================================
+   LISTAS
+   ============================================ */
 ul,
 ol {
     list-style: none;
 }
 
-/* === IMÁGENES === */
+/* ============================================
+   IMÁGENES & MEDIA (Premium)
+   ============================================ */
 img,
 video {
     max-width: 100%;
@@ -136,7 +172,13 @@ video {
     display: block;
 }
 
-/* === FORMULARIOS BASE === */
+img {
+    border-radius: var(--radius-sm);
+}
+
+/* ============================================
+   FORMULARIOS BASE (Premium)
+   ============================================ */
 button,
 input,
 select,
@@ -153,19 +195,31 @@ button {
     cursor: pointer;
 }
 
-/* === SELECCIÓN === */
+/* ============================================
+   SELECCIÓN (Premium)
+   ============================================ */
 ::selection {
     background-color: var(--color-primary);
     color: var(--text-primary);
 }
 
-/* === FOCUS VISIBLE === */
+::-moz-selection {
+    background-color: var(--color-primary);
+    color: var(--text-primary);
+}
+
+/* ============================================
+   FOCUS VISIBLE (Premium)
+   ============================================ */
 :focus-visible {
-    outline: 2px solid var(--color-primary);
+    outline: none;
+    box-shadow: var(--focus-ring);
     outline-offset: 2px;
 }
 
-/* === CONTENEDOR === */
+/* ============================================
+   CONTENEDOR (Premium)
+   ============================================ */
 .container {
     width: 100%;
     max-width: var(--container-xl);
@@ -183,10 +237,18 @@ button {
     max-width: var(--container-2xl);
 }
 
-/* === SECCIÓN === */
+.container--full {
+    max-width: 100%;
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+}
+
+/* ============================================
+   SECCIÓN (Premium)
+   ============================================ */
 .section {
-    padding-top: var(--space-16);
-    padding-bottom: var(--space-16);
+    padding-top: var(--space-20);
+    padding-bottom: var(--space-20);
 }
 
 .section--dark {
@@ -194,10 +256,22 @@ button {
 }
 
 .section--gradient {
-    background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-surface) 100%);
+    background: var(--gradient-dark);
 }
 
-/* === SR-ONLY (Screen Reader) === */
+.section--compact {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-16);
+}
+
+.section--spacious {
+    padding-top: var(--space-24);
+    padding-bottom: var(--space-24);
+}
+
+/* ============================================
+   SR-ONLY (Accessibility)
+   ============================================ */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -208,4 +282,200 @@ button {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+/* ============================================
+   ANIMACIONES PREMIUM
+   ============================================ */
+@keyframes gradientShift {
+    0% {
+        opacity: 0.5;
+        transform: scale(1) translate(0, 0);
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 0.5;
+        transform: scale(1.1) translate(-2%, 2%);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 20px var(--color-primary-glow);
+    }
+    50% {
+        box-shadow: 0 0 40px var(--color-primary-glow-strong);
+    }
+}
+
+/* ============================================
+   UTILITY CLASSES (Premium)
+   ============================================ */
+.animate-fade-in {
+    animation: fadeIn 0.6s var(--transition-spring) forwards;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s var(--transition-spring) forwards;
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown 0.8s var(--transition-spring) forwards;
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.6s var(--transition-spring) forwards;
+}
+
+.animate-slide-left {
+    animation: slideInLeft 0.8s var(--transition-spring) forwards;
+}
+
+.animate-slide-right {
+    animation: slideInRight 0.8s var(--transition-spring) forwards;
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+    animation: glow 3s ease-in-out infinite;
+}
+
+/* Staggered animation delays */
+.animate-delay-1 { animation-delay: 0.1s; }
+.animate-delay-2 { animation-delay: 0.2s; }
+.animate-delay-3 { animation-delay: 0.3s; }
+.animate-delay-4 { animation-delay: 0.4s; }
+.animate-delay-5 { animation-delay: 0.5s; }
+
+/* Visibility utilities */
+.hidden { display: none !important; }
+.visible { visibility: visible !important; }
+.invisible { visibility: hidden !important; }
+
+/* Text utilities */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-muted { color: var(--text-muted); }
+.text-accent { color: var(--color-accent); }
+
+/* Spacing utilities */
+.mt-0 { margin-top: var(--space-0); }
+.mt-4 { margin-top: var(--space-4); }
+.mt-8 { margin-top: var(--space-8); }
+.mb-0 { margin-bottom: var(--space-0); }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-8 { margin-bottom: var(--space-8); }
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    .no-print {
+        display: none !important;
+    }
 }
