@@ -36,10 +36,7 @@ document.addEventListener('DOMContentLoaded', async () => {
  * @returns {Promise<Object>}
  */
 async function fetchVersionData() {
-    const response = await fetch('versions.json');
-    if (!response.ok) {
-        throw new Error('No se pudo cargar versions.json');
-    }
+    const response = await window.CacheBuster.fetchNoCache('versions.json');
     return await response.json();
 }
 

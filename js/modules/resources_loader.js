@@ -29,10 +29,7 @@ document.addEventListener('DOMContentLoaded', async () => {
  * @returns {Promise<Object>}
  */
 async function fetchResources() {
-    const response = await fetch('resources.json');
-    if (!response.ok) {
-        throw new Error('No se pudo cargar resources.json');
-    }
+    const response = await window.CacheBuster.fetchNoCache('resources.json');
     return await response.json();
 }
 

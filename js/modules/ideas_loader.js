@@ -22,10 +22,7 @@ document.addEventListener('DOMContentLoaded', async () => {
  * @returns {Promise<Array>}
  */
 async function fetchIdeas() {
-    const response = await fetch('ideas.json');
-    if (!response.ok) {
-        throw new Error('No se pudo cargar ideas.json');
-    }
+    const response = await window.CacheBuster.fetchNoCache('ideas.json');
     return await response.json();
 }
 

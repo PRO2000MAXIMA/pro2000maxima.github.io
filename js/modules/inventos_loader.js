@@ -22,10 +22,7 @@ document.addEventListener('DOMContentLoaded', async () => {
  * @returns {Promise<Array>}
  */
 async function fetchInventos() {
-    const response = await fetch('inventos.json');
-    if (!response.ok) {
-        throw new Error('No se pudo cargar inventos.json');
-    }
+    const response = await window.CacheBuster.fetchNoCache('inventos.json');
     return await response.json();
 }
 
