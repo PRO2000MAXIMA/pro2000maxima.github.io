@@ -48,23 +48,26 @@ async function fetchVersionData() {
  * @param {Object} config
  */
 function updateVersionLabels(versionLabel, dateLabel, latest, config) {
+    const cleanVersion = latest.version.replace(/^v/i, '');
+    const displayVersion = `v${cleanVersion}`;
+
     if (versionLabel) {
-        versionLabel.textContent = `v${latest.version}`;
+        versionLabel.textContent = displayVersion;
     }
 
     if (dateLabel) {
-        dateLabel.innerHTML = formatVersionDate(latest, config.MONTHS, config);
+        dateLabel.innerHTML = formatVersionDate(displayVersion, latest.date, config.MONTHS, config);
     }
 }
 
 /**
- * @param {Object} latest
+ * @param {string} displayVersion
+ * @param {string} dateStr
  * @param {Array<string>} months
  * @param {Object} config
  * @returns {string}
  */
-function formatVersionDate(latest, months, config) {
-    const dateStr = latest.date;
+function formatVersionDate(displayVersion, dateStr, months, config) {
     let day, month, year;
 
     const dotParts = dateStr.split('.');
@@ -85,7 +88,7 @@ function formatVersionDate(latest, months, config) {
 
     const monthIndex = month - config.MONTH_INDEX_OFFSET;
     const monthName = months[monthIndex] || 'Abril';
-    return `Versión actual: <strong>v${latest.version}</strong> &nbsp;|&nbsp; ${day} de ${monthName} ${year}`;
+    return `Versión actual: <strong>${displayVersion}</strong> &nbsp;|&nbsp; ${day} de ${monthName} ${year}`;
 }
 
 /**
