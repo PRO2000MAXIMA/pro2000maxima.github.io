@@ -38,11 +38,7 @@
         </a>
 
         <nav class="nav" id="nav">
-            <a href="index.html" class="nav__link">Inicio</a>
-            <a href="pro2000.html" class="nav__link">PRO-2000 MAXIMA</a>
-            <a href="inventos.html" class="nav__link">Inventos</a>
-            <a href="ideas.html" class="nav__link active">Ideas</a>
-            <a href="documentos.html" class="nav__link">Documentos</a>
+            <!-- Se genera dinámicamente desde config.json -->
         </nav>
 
         <button class="nav-toggle" id="nav-toggle" aria-label="Menú de navegación">
@@ -54,8 +50,8 @@
 
     <main>
         <section class="ideas-hero">
-            <h1 class="ideas-hero__title">Ideas y <span>Mejoras</span></h1>
-            <p class="ideas-hero__description">
+            <h1 class="ideas-hero__title" data-config-text="hero_title">Ideas y <span>Mejoras</span></h1>
+            <p class="ideas-hero__description" data-config-text="hero_description">
                 Conocimiento técnico compartido. Mejoras de proceso, técnicas de ensamblaje y buenas prácticas.
             </p>
         </section>
@@ -98,6 +94,7 @@
 
     <!-- Scripts -->
     <script src="js/modules/cache_buster.js"></script>
+    <script src="js/modules/config_loader.js"></script>
     <script src="js/modules/header.js"></script>
     <script src="js/modules/ideas_loader.js"></script>
     <script src="js/modules/animations.js"></script>

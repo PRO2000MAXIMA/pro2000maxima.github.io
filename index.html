@@ -50,11 +50,7 @@
         </a>
 
         <nav class="nav" id="nav">
-            <a href="index.html" class="nav__link active">Inicio</a>
-            <a href="pro2000.html" class="nav__link">PRO-2000 MAXIMA</a>
-            <a href="inventos.html" class="nav__link">Inventos</a>
-            <a href="ideas.html" class="nav__link">Ideas</a>
-            <a href="documentos.html" class="nav__link">Documentos</a>
+            <!-- Se genera dinámicamente desde config.json -->
         </nav>
 
         <button class="nav-toggle" id="nav-toggle" aria-label="Menú de navegación">
@@ -68,15 +64,15 @@
          MAIN CONTENT
          ============================================ -->
     <main>
-        <!-- Hero Section -->
+<arg_value>        <!-- Hero Section -->
         <section class="hero" id="hero">
             <div class="hero__content">
-                <p class="hero__eyebrow">Bienvenidos al Portal Profesional</p>
-                <h1 class="hero__title">
+                <p class="hero__eyebrow" data-config-text="hero_eyebrow">Bienvenidos al Portal Profesional</p>
+                <h1 class="hero__title" data-config-text="hero_title">
                     De la Idea al<br>
                     <span>Taller Digital</span>
                 </h1>
-                <p class="hero__description">
+                <p class="hero__description" data-config-text="hero_description">
                     Majotubeunaidea es el nexo entre la carpintería tradicional y las herramientas de
                     próxima generación. Software, inventos y adaptaciones para el taller moderno.
                 </p>
@@ -353,6 +349,7 @@
 
     <!-- Scripts -->
     <script src="js/modules/cache_buster.js"></script>
+    <script src="js/modules/config_loader.js"></script>
     <script src="js/modules/header.js"></script>
     <script src="js/modules/modal.js"></script>
     <script src="js/modules/animations.js"></script>

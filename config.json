@@ -1,0 +1,120 @@
+{
+    "navigation": [
+        {
+            "label": "Inicio",
+            "url": "index.html",
+            "icon": "",
+            "order": 1,
+            "enabled": true
+        },
+        {
+            "label": "PRO-2000 MAXIMA",
+            "url": "pro2000.html",
+            "icon": "",
+            "order": 2,
+            "enabled": true
+        },
+        {
+            "label": "Inventos",
+            "url": "inventos.html",
+            "icon": "",
+            "order": 3,
+            "enabled": true
+        },
+        {
+            "label": "Ideas",
+            "url": "ideas.html",
+            "icon": "",
+            "order": 4,
+            "enabled": true
+        },
+        {
+            "label": "Documentos",
+            "url": "documentos.html",
+            "icon": "",
+            "order": 5,
+            "enabled": true
+        }
+    ],
+    "texts": {
+        "index": {
+            "hero_eyebrow": "Bienvenidos al Portal Profesional",
+            "hero_title": "De la Idea al<br><span>Taller Digital</span>",
+            "hero_description": "Majotubeunaidea es el nexo entre la carpintería tradicional y las herramientas de próxima generación. Software, inventos y adaptaciones para el taller moderno.",
+            "intro_card_1_title": "PRO-2000 MAXIMA",
+            "intro_card_1_desc": "Software integral para fabricación de carpintería de aluminio y PVC. Del diseño a la entrega.",
+            "intro_card_2_title": "Inventos de Taller",
+            "intro_card_2_desc": "Adaptaciones de máquinas, herramientas personalizadas y soluciones creativas para el día a día.",
+            "intro_card_3_title": "Ideas y Procesos",
+            "intro_card_3_desc": "Mejoras de procesos, técnicas de ensamblaje y conocimiento técnico compartido.",
+            "featured_badge": "Software Destacado",
+            "featured_title": "PRO-2000 MAXIMA",
+            "featured_description": "La solución integral más avanzada para la gestión y fabricación de carpintería de aluminio y PVC. Diseño, optimización de corte, gestión de obras y facturación en una sola plataforma.",
+            "cta_section_badge": "Contacto y Soporte",
+            "cta_section_title": "PRO-2000 MAXIMA",
+            "cta_section_desc": "Consulte cualquier duda técnica o solicite información sobre licencias profesionales."
+        },
+        "pro2000": {
+            "hero_title": "PRO-2000 MAXIMA",
+            "hero_description": "La solución integral más avanzada para la gestión y fabricación de carpintería de aluminio y PVC. Del diseño a la entrega, todo en una sola plataforma.",
+            "features_badge": "Funcionalidades",
+            "features_title": "Todo lo que Necesitas",
+            "features_description": "Cada módulo está diseñado para optimizar tu flujo de trabajo y maximizar la productividad.",
+            "card_designer_title": "MÓDULO DESIGNER",
+            "card_designer_desc": "Motor de diseño 2D con cálculo de cotas y perfiles en tiempo real. Soporta formas especiales: trapecios, arcos y triángulos.",
+            "card_optimization_title": "OPTIMIZACIÓN AVANZADA",
+            "card_optimization_desc": "Algoritmos de corte de última generación para minimizar el desperdicio. Exportación a etiquetas y listas de corte.",
+            "card_workshop_title": "GESTIÓN DE TALLER",
+            "card_workshop_desc": "Control total sobre las órdenes de fabricación, partes de trabajo y seguimiento de tiempos de producción.",
+            "card_works_title": "CONTROL DE OBRAS",
+            "card_works_desc": "Seguimiento detallado de fases: medición, fabricación, instalación y cierre. Gestión integral de proyectos.",
+            "card_inventory_title": "INVENTARIO INTELIGENTE",
+            "card_inventory_desc": "Seguimiento de stock de perfiles y accesorios con alertas de reposición y control de existencias mínimas.",
+            "card_reports_title": "REPORTES TÉCNICOS",
+            "card_reports_desc": "Documentación profesional en PDF: planos técnicos, listas de materiales y presupuestos para cliente final.",
+            "card_budgets_title": "PRESUPUESTOS COMERCIALES",
+            "card_budgets_desc": "Ofertas claras y detalladas con gráficos, precios desglosados y márgenes configurables por cliente.",
+            "card_invoicing_title": "FACTURACIÓN INTEGRADA",
+            "card_invoicing_desc": "Emisión de facturas vinculadas directamente a presupuestos. Gestión de cobros y albaranes.",
+            "download_badge": "Soporte y Recursos",
+            "download_title": "¿Necesita más información?",
+            "download_desc": "Estamos a su disposición para resolver cualquier duda técnica sobre la integración de PRO-2000 en su taller. Solicite una atención personalizada o consulte nuestros manuales.",
+            "changelog_title": "Últimas Mejoras"
+        },
+        "inventos": {
+            "hero_title": "Inventos y <span>Adaptaciones</span>",
+            "hero_description": "Soluciones creativas nacidas en el taller. Fichas técnicas, materiales y dificultad."
+        },
+        "ideas": {
+            "hero_title": "Ideas y <span>Mejoras</span>",
+            "hero_description": "Conocimiento técnico compartido. Mejoras de proceso, técnicas de ensamblaje y buenas prácticas.",
+            "cta_badge": "Comunidad",
+            "cta_title": "¿Tienes una idea para compartir?"
+        },
+        "documentos": {
+            "hero_title": "Documentos y <span>Manuales</span>",
+            "hero_description": "Todo el soporte técnico que necesitas. Guías paso a paso, manuales de usuario y documentación técnica descargable para PRO-2000 MAXIMA.",
+            "manuals_title": "📄 Manuales y Guías PDF",
+            "videos_title": "🎥 Video-Tutoriales YouTube",
+            "cta_title": "¿No encuentra lo que busca?",
+            "cta_desc": "Si necesita un manual específico o tiene dificultades técnicas, nuestro equipo de soporte le ayudará encantado."
+        }
+    },
+    "images": {
+        "logo": "assets/logo_final.jpg",
+        "brand_primary": "IMAGENES/DESIGNER.png",
+        "brand_optimization": "IMAGENES/OPTIMIZACION.png",
+        "brand_workshop": "IMAGENES/TALLER.png",
+        "brand_works": "IMAGENES/FASES Y OBRAS.png",
+        "brand_inventory": "IMAGENES/CONTROL DE INVENTARIO.png",
+        "brand_reports": "IMAGENES/REPORTES PROFESIONALES.png",
+        "brand_budgets": "IMAGENES/PRESUPUESTO.png",
+        "brand_invoicing": "IMAGENES/FACTURA.png",
+        "hero_slides_pattern": "assets/paginas/pag{n}.jpg"
+    },
+    "brand": {
+        "name": "Majotube<span>unaidea</span>",
+        "tagline": "Innovación Digital",
+        "footer_copy": "© 2026 Majotubeunaidea | Portal de Innovación Técnica en Carpintería"
+    }
+}

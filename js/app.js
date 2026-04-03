@@ -10,9 +10,14 @@ const APP_CONFIG = Object.freeze({
 
 /**
  * Inicializa la aplicación cuando el DOM está listo
- * @returns {void}
+ * @returns {Promise<void>}
  */
-function initializeApp() {
+async function initializeApp() {
+    // Config Loader (DEBE ir primero para renderizar menú dinámico)
+    if (typeof ConfigLoader !== 'undefined') {
+        await ConfigLoader.initConfig();
+    }
+
     // Header (Global HeaderController)
     if (typeof HeaderController !== 'undefined') {
         HeaderController.init();

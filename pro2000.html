@@ -41,11 +41,7 @@
         </a>
 
         <nav class="nav" id="nav">
-            <a href="index.html" class="nav__link">Inicio</a>
-            <a href="pro2000.html" class="nav__link active">PRO-2000 MAXIMA</a>
-            <a href="inventos.html" class="nav__link">Inventos</a>
-            <a href="ideas.html" class="nav__link">Ideas</a>
-            <a href="documentos.html" class="nav__link">Documentos</a>
+            <!-- Se genera dinámicamente desde config.json -->
         </nav>
 
         <button class="nav-toggle" id="nav-toggle" aria-label="Menú de navegación">
@@ -61,8 +57,8 @@
         <section class="pro2000-hero">
             <div class="pro2000-hero__content">
                 <img src="assets/logo_final.jpg" alt="PRO-2000 MAXIMA Logo" class="pro2000-hero__logo">
-                <h1 class="pro2000-hero__title">PRO-2000 MAXIMA</h1>
-                <p style="font-size: var(--font-size-lg); color: var(--text-secondary);">
+                <h1 class="pro2000-hero__title" data-config-text="hero_title">PRO-2000 MAXIMA</h1>
+                <p style="font-size: var(--font-size-lg); color: var(--text-secondary);" data-config-text="hero_description">
                     La solución integral más avanzada para la gestión y fabricación de carpintería
                     de aluminio y PVC. Del diseño a la entrega, todo en una sola plataforma.
                 </p>
@@ -70,8 +66,8 @@
                     Versión actual: <strong>v7.6.4</strong> &nbsp;|&nbsp; Febrero 2026
                 </div>
                 <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
-                    <a href="#acceso" class="btn btn--primary btn--lg">Solicitar Más Información</a>
-                    <a href="#demo" class="btn btn--secondary btn--lg">Ver Características</a>
+                    <a href="#contacto" class="btn btn--primary btn--lg">Solicitar Más Información</a>
+                    <a href="#features" class="btn btn--secondary btn--lg">Ver Características</a>
                 </div>
             </div>
 
@@ -86,7 +82,7 @@
         </section>
 
         <!-- Features Grid -->
-        <section class="features-section">
+        <section class="features-section" id="features">
             <div class="container">
                 <div class="section-header">
                     <span class="badge badge--primary">Funcionalidades</span>
@@ -220,7 +216,7 @@
         </section>
 
         <!-- Support / Manuals Section -->
-        <section class="download-section">
+        <section class="download-section" id="contacto">
             <div class="download-box">
                 <span class="badge badge--accent" style="margin-bottom: var(--space-4);">Soporte y Recursos</span>
                 <h2>¿Necesita más información?</h2>
@@ -296,6 +292,7 @@
 
     <!-- Scripts -->
     <script src="js/modules/cache_buster.js"></script>
+    <script src="js/modules/config_loader.js"></script>
     <script src="js/modules/header.js"></script>
     <script src="js/modules/version_loader.js"></script>
     <script src="js/modules/modal.js"></script>
