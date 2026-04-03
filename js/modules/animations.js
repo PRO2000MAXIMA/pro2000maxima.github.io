@@ -19,7 +19,7 @@
 
     window.ScrollAnimations = {
         init: function () {
-            if (!('IntersectionObserver' in window)) return;
+            if (!('IntersectionObserver' in window)) {return;}
             const observer = new IntersectionObserver(handleIntersection, {
                 threshold: CONFIG.threshold,
                 rootMargin: CONFIG.rootMargin
@@ -31,7 +31,7 @@
                 observer.observe(el);
             });
             const style = document.createElement('style');
-            style.textContent = `.is-visible { opacity: 1 !important; transform: translateY(0) !important; }`;
+            style.textContent = '.is-visible { opacity: 1 !important; transform: translateY(0) !important; }';
             document.head.appendChild(style);
         }
     };

@@ -6,7 +6,7 @@
 
     function handleScroll() {
         const header = document.querySelector('.header');
-        if (!header) return;
+        if (!header) {return;}
         const shouldBeScrolled = window.scrollY > state.scrollThreshold;
         if (shouldBeScrolled !== state.isScrolled) {
             state.isScrolled = shouldBeScrolled;
@@ -17,7 +17,7 @@
     function toggleMobileNav() {
         const nav = document.querySelector('.nav');
         const toggle = document.querySelector('.nav-toggle');
-        if (!nav || !toggle) return;
+        if (!nav || !toggle) {return;}
         nav.classList.toggle('active');
         toggle.classList.toggle('active');
     }

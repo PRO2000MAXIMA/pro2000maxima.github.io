@@ -13,9 +13,6 @@ const APP_CONFIG = Object.freeze({
  * @returns {void}
  */
 function initializeApp() {
-    console.log('[App] Iniciando sistema...');
-    console.log('[App] Starting...'); // Keep original log for consistency with other logs
-
     // Header (Global HeaderController)
     if (typeof HeaderController !== 'undefined') {
         HeaderController.init();
@@ -36,11 +33,13 @@ function initializeApp() {
     // Filter System
     if (typeof FilterController !== 'undefined') {
         const filterBar = document.querySelector('.filter-bar');
-        if (filterBar) FilterController.init();
+        if (filterBar) {
+            FilterController.init();
+        }
     }
 
     initSmoothScroll();
-    console.log('[App] Sistema cargado correctamente');
+    console.warn('[App] Sistema cargado correctamente');
 }
 
 /**
@@ -51,7 +50,7 @@ function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener('click', (event) => {
             const targetId = anchor.getAttribute('href');
-            if (targetId === '#') return;
+            if (targetId === '#') {return;}
             event.preventDefault();
             const targetElement = document.querySelector(targetId);
             if (targetElement) {

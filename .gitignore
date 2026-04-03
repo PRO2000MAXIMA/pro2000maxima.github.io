@@ -1,15 +1,58 @@
+# ============================================
+# PRO-2000 MAXIMA - GitHub Pages .gitignore
+# Solo se publican archivos necesarios para el sitio web
+# ============================================
+
+# --------------------------------------------
+# DESARROLLO (NO publicar)
+# --------------------------------------------
+# Linters y configuracion de desarrollo
+eslint.config.js
+.eslintrc*
+.prettierrc*
+.editorconfig
+
+# Type checking
+jsconfig.json
+tsconfig.json
+
+# Build tools
+package.json
+package-lock.json
+yarn.lock
+node_modules/
+
+# --------------------------------------------
+# LOCAL TEMP (NO publicar)
+# --------------------------------------------
 # Local IDE files
 .vscode/
 .idea/
 *.swp
-*.log
+*.swo
+*~
 
 # OS files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+desktop.ini
 
 # Temp files
+*.log
+*.tmp
+*.bak
+*.old
+~$*
+
+# --------------------------------------------
+# CARPETAS TEMPORALES (NO publicar)
+# --------------------------------------------
  Nueva carpeta/
  pagina/
- *.bak
- *.old
+tmp/
+temp/

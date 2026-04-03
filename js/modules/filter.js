@@ -1,11 +1,24 @@
+/**
+ * Filter Controller - PRO-2000 MAXIMA
+ * Sistema de filtrado con constantes centralizadas
+ */
 (function () {
+    'use strict';
+
+    const BREAKPOINTS = Object.freeze({
+        MOBILE: 1024
+    });
+
+    const TIMING = Object.freeze({
+        FILTER_INIT_DELAY_MS: 100
+    });
+
     let activeFilter = 'all';
     let filterableItems = [];
 
     function applyFilter(category) {
         activeFilter = category;
 
-        // Dynamic refresh of items in case they were loaded late
         filterableItems = Array.from(document.querySelectorAll('[data-category]'));
 
         filterableItems.forEach((item) => {
@@ -21,38 +34,41 @@
             }
         });
 
+        updateFilterButtons(category);
+    }
+
+    function updateFilterButtons(category) {
         document.querySelectorAll('.filter-btn').forEach((btn) => {
             const btnCategory = btn.getAttribute('data-filter');
             const isActive = btnCategory === category;
             btn.classList.toggle('active', isActive);
 
-            // Center active button in scrollable container (Mobile)
-            if (isActive && window.innerWidth <= 1024) {
+            if (isActive && window.innerWidth <= BREAKPOINTS.MOBILE) {
                 btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
             }
         });
     }
 
+    function handleFilterClick(event) {
+        const { target } = event;
+        if (target.classList.contains('filter-btn')) {
+            const filterCategory = target.getAttribute('data-filter');
+            if (filterCategory && filterCategory !== activeFilter) {
+                applyFilter(filterCategory);
+            }
+        }
+    }
+
     window.FilterController = {
         init: function () {
             const filterBar = document.querySelector('.filter-bar');
-            if (!filterBar) return;
+            if (!filterBar) {
+                return;
+            }
 
-            filterBar.addEventListener('click', (event) => {
-                const target = event.target;
-                if (target.classList.contains('filter-btn')) {
-                    const filterCategory = target.getAttribute('data-filter');
-                    if (filterCategory && filterCategory !== activeFilter) {
-                        applyFilter(filterCategory);
-                    }
-                }
-            });
-
-            // Delay initial application to ensure dynamic content exists
-            setTimeout(() => applyFilter('all'), 100);
+            filterBar.addEventListener('click', handleFilterClick);
+            setTimeout(() => applyFilter('all'), TIMING.FILTER_INIT_DELAY_MS);
         },
-        applyFilter: applyFilter
+        applyFilter
     };
 })();
-
-
