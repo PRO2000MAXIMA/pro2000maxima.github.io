@@ -18,7 +18,7 @@
             "label": "Inventos",
             "url": "inventos.html",
             "icon": "",
-            "order": 3,
+            "order": 1,
             "enabled": true
         },
         {
@@ -103,7 +103,7 @@
     "images": {
         "logo": "assets/logo_final.jpg",
         "brand_primary": "IMAGENES/DESIGNER.png",
-        "brand_optimization": "images/optimi.png",
+        "brand_optimization": "IMAGENES/optimi_20260405_204729.png",
         "brand_workshop": "IMAGENES/TALLER.png",
         "brand_works": "IMAGENES/FASES Y OBRAS.png",
         "brand_inventory": "IMAGENES/CONTROL DE INVENTARIO.png",
