@@ -103,7 +103,7 @@
     "images": {
         "logo": "assets/logo_final.jpg",
         "brand_primary": "IMAGENES/DESIGNER.png",
-        "brand_optimization": "IMAGENES/optimi.png",
+        "brand_optimization": "images/optimi.png",
         "brand_workshop": "IMAGENES/TALLER.png",
         "brand_works": "IMAGENES/FASES Y OBRAS.png",
         "brand_inventory": "IMAGENES/CONTROL DE INVENTARIO.png",
