@@ -5,6 +5,7 @@
         "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.6.7.1/PRO-2000_v7.6.7.1_Setup.exe",
         "changelog": [
             "Mejoras de administracion,",
+            "Nuevos permisos para usuarios control total de prevencion de datos,",
             "Nueva funcion de recargar datos para todas las obras ,",
             "Nuevo dialogo de calculo de precios totalmente configurable,",
             "Mejora sustancial en los documentos (facturas,presupuestos y albaranes)."
