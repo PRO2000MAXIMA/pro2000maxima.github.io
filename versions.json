@@ -1,13 +1,14 @@
 {
     "latest": {
-        "version": "v7.6.7",
+        "version": "v7.6.7.1",
         "date": "5.4.2026",
-        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.6.7/PRO-2000_v7.6.7_Setup.exe",
+        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.6.7.1/PRO-2000_v7.6.7.1_Setup.exe",
         "changelog": [
             "Añadidas en el pedido de persianas las mosquiteras,",
             "Mejoras de administracion,",
             "Nueva funcion de recargar datos para todas las obras ,",
-            "Nuevo dialogo de calculo de precios totalmente configurable,"
+            "Nuevo dialogo de calculo de precios totalmente configurable,",
+            "Mejora sustancial en los documentos (facturas,presupuestos y albaranes)."
         ]
     },
     "history": []
