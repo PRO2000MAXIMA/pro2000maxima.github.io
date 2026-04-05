@@ -227,6 +227,8 @@
     overflow: hidden;
     transition: var(--transition-slow);
     box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
 }
 
 .features-grid .card:hover {
@@ -237,24 +239,71 @@
     border-color: rgba(0, 122, 255, 0.3);
 }
 
-.features-grid .card__image {
+.features-grid .card__image-wrapper {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
+    padding: var(--space-6);
+    background: linear-gradient(145deg, rgba(0, 122, 255, 0.05), rgba(0, 0, 0, 0.2));
     border-bottom: 1px solid var(--glass-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 280px;
+    position: relative;
+    overflow: hidden;
 }
 
-.features-grid .card h3 {
+.features-grid .card__image-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(0, 122, 255, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+    transition: var(--transition-slow);
+}
+
+.features-grid .card:hover .card__image-wrapper::before {
+    background: radial-gradient(circle at center, rgba(0, 122, 255, 0.2) 0%, transparent 80%);
+}
+
+.features-grid .card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: var(--radius-lg);
+    transition: var(--transition-slow);
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.features-grid .card:hover .card__image {
+    transform: scale(1.05);
+    box-shadow: 0 20px 60px rgba(0, 122, 255, 0.2);
+}
+
+.features-grid .card__content {
+    padding: var(--space-6);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.features-grid .card__content h3 {
     font-family: var(--font-family-headings);
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-lg);
     font-weight: var(--font-weight-bold);
     color: var(--color-primary-light);
     margin-bottom: var(--space-3);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .features-grid .card__description {
     color: var(--text-secondary);
     line-height: var(--line-height-relaxed);
+    text-align: center;
+    font-size: var(--font-size-sm);
 }
 
 /* ============================================
