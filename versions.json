@@ -1,16 +1,16 @@
 {
     "latest": {
-        "version": "v7.6.7.6",
-        "date": "12.4.2026",
-        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.6.7.6/PRO-2000_v7.6.7.6_Setup.exe",
+        "version": "v7.6.7.7",
+        "date": "18.4.2026",
+        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.6.7.7/PRO-2000_v7.6.7.7_Setup.exe",
         "changelog": [
             "Mejoras de administracion,",
             "Nuevos permisos para usuarios control total de prevencion de datos,",
-            "Nueva funcion de recargar datos para todas las obras ,",
-            "Nuevo dialogo de calculo de precios totalmente configurable,",
             "Mejora sustancial en los documentos (facturas,presupuestos y albaranes).",
             "Nueva seleccion de faltas de obra y seleccion independiente,",
-            "Reprado errores de copias de seguridad automaticas"
+            "Reparado errores de copias de seguridad automaticas",
+            "Nueva vista en mosaico de los articulos",
+            "Super optimizacion de el programa y correccion de errores"
         ]
     },
     "history": []
