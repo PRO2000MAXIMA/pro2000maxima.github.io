@@ -1,8 +1,8 @@
 {
     "latest": {
-        "version": "v7.6.8.1",
-        "date": "27.4.2026",
-        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.6.8.1/PRO-2000_v7.6.8.1_Setup.exe",
+        "version": "v7.6.8.4",
+        "date": "30.4.2026",
+        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.6.8.4/PRO-2000_v7.6.8.4_Setup.exe",
         "changelog": [
             "Mejoras de administracion,",
             "Nuevos permisos para usuarios control total de prevencion de datos,",
