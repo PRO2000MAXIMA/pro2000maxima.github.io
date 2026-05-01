@@ -1,17 +1,14 @@
 {
     "latest": {
-        "version": "v7.6.8.4",
-        "date": "30.4.2026",
-        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.6.8.4/PRO-2000_v7.6.8.4_Setup.exe",
+        "version": "v7.6.8.4.1",
+        "date": "01.5.2026",
+        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.6.8.4/PRO-2000_v7.6.8.4.1_Setup.exe",
         "changelog": [
-            "Mejoras de administracion,",
-            "Nuevos permisos para usuarios control total de prevencion de datos,",
-            "Mejora sustancial en los documentos (facturas,presupuestos y albaranes).",
-            "Nueva seleccion de faltas de obra y seleccion independiente,",
             "Reparado errores de copias de seguridad automaticas",
             "Nueva vista en mosaico de los articulos",
             "Super optimizacion de el programa y correccion de errores",
-            "Reparada la generacion de diagramas y dxf"
+            "Reparada la generacion de diagramas y dxf",
+            "Pruebas CNC"
         ]
     },
     "history": []
