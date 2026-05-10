@@ -1,14 +1,14 @@
 {
     "latest": {
-        "version": "v7.6.9.3",
-        "date": "09.05.2026",
-        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.6.9.3/PRO-2000_v7.6.9.3_Setup.exe",
+        "version": "v7.6.9.4",
+        "date": "10.05.2026",
+        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.6.9.4/PRO-2000_v7.6.9.4_Setup.exe",
         "changelog": [
             "Reparado errores de copias de seguridad automaticas",
             "Nueva vista en mosaico de los articulos",
             "Super optimizacion de el programa y correccion de errores",
             "Reparada la generacion de diagramas y dxf",
-            "Pruebas CNC"
+            "CNC validado y funcional"
         ]
     },
     "history": []
