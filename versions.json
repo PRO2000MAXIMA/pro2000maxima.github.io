@@ -1,8 +1,8 @@
 {
     "latest": {
-        "version": "v7.6.9.6",
-        "date": "10.05.2026",
-        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.6.9.6/PRO-2000_v7.6.9.6_Setup.exe",
+        "version": "v7.6.9.7",
+        "date": "13.05.2026",
+        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.6.9.7/PRO-2000_v7.6.9.7_Setup.exe",
         "changelog": [
             "Reparado errores de copias de seguridad automaticas",
             "Nueva vista en mosaico de los articulos",
