@@ -1,8 +1,8 @@
 {
     "latest": {
-        "version": "v7.7.1.9",
+        "version": "v7.7.2.0",
         "date": "21.05.2026",
-        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.7.1.9/PRO-2000_Installer_v7.7.1.9.exe",
+        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.7.2.0/PRO-2000_Installer_v7.7.2.0.exe",
         "changelog": [
             "Reparado errores de copias de seguridad automaticas",
             "Nueva vista en mosaico de los articulos",
