@@ -1,14 +1,12 @@
 {
     "latest": {
         "version": "v7.7.2.2",
-        "date": "21.05.2026",
+        "date": "31.05.2026",
         "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.7.2.2/PRO-2000_Installer_v7.7.2.2.exe",
         "changelog": [
-            "Reparado errores de copias de seguridad automaticas",
             "Nueva vista en mosaico de los articulos",
             "Super optimizacion de el programa y correccion de errores",
-            "Reparada la generacion de diagramas y dxf",
-            "CNC validado y funcional"
+            "nuevo MAXIMA WEB uso en red local y servidor"
         ]
     },
     "history": []
