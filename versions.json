@@ -4,10 +4,10 @@
         "date": "05.07.2026",
         "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.7.3.8/PRO-2000_Installer_v7.7.3.8.exe",
         "changelog": [
-            "Nueva vista en mosaico de los articulos",
-            "Super optimizacion de el programa y correccion de errores",
-            "CNC MECAL FUNCIONAL Y PROBADO",
-            "nuevo MAXIMA WEB uso en red local y servidor"
+            "-Super optimizacion de el programa y correccion de errores.",
+            "-CVS PARA CNC  FUNCIONAL Y PROBADO.",
+            "-MAXIMA WEB uso en red local y servidor.",
+            "-Corrección  de errores y optimización del programa."
         ]
     },
     "history": []
