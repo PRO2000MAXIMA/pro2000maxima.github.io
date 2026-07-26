@@ -1,8 +1,8 @@
 {
     "latest": {
-        "version": "v7.7.4.8",
+        "version": "v7.7.5.0",
         "date": "19.07.2026",
-        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.7.4.8/PRO-2000_Installer_v7.7.4.8.exe",
+        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.7.5.0/PRO-2000_Installer_v7.7.5.0.exe",
         "changelog": [
             "-CVS PARA CNC  FUNCIONAL Y PROBADO.",
             "-MAXIMA WEB uso en red local y servidor.",
