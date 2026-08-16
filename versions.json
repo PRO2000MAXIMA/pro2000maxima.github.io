@@ -4,9 +4,8 @@
         "date": "10-08-10",
         "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.7.5.4/PRO-2000_Installer_v7.7.5.4.exe",
         "changelog": [
-            "-CVS PARA CNC  FUNCIONAL Y PROBADO.",
-            "-MAXIMA WEB uso en red local y servidor.",
-            "-Añadida hoja recta a validacion CNC FUNCIONAL 100X100."
+            "-NUEVA FUNCIÓN SERVIDOR,(POSTGRESQL) CON SOPORTE DE PARA VARIOS CLIENTES+DE 10",
+            "-MEJORA EN ESTABILIDAD Y FUNCIONAMIENTO"
         ]
     },
     "history": []
