@@ -3,7 +3,10 @@
         "version": "v7.7.5.7",
         "date": "",
         "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/cliente-v7.7.5.7/PRO-2000_Cliente_Installer_v7.7.5.7.exe",
-        "changelog": []
+        "changelog": [
+            "-NUEVA FUNCIÓN SERVIDOR,(PostgreSQL) CON SOPORTE PARA VARIOS CLIENTES+DE 10",
+            "-MEJORA EN ESTABILIDAD Y FUNCIONAMIENTO"
+        ]
     },
     "history": []
 }
