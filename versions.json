@@ -6,8 +6,8 @@
         "installer_name": "",
         "changelog": [
             "-NUEVA FUNCIÓN SERVIDOR,(PostgreSQL) CON SOPORTE  PARA VARIOS CLIENTES+DE 10",
-            "-MEJORA EN ESTABILIDAD Y FUNCIONALIDAD",
-            "- AÑADIDA REGLAS A84H0"
+            "-MEJORA EN ESTABILIDAD Y FUNCIONAL",
+            "-REVISADAS REGLAS Y SOPORTE DE DIVISIONES"
         ]
     },
     "history": []
