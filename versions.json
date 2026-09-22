@@ -5,9 +5,8 @@
         "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.7.7.1/PRO-2000_Installer_v7.7.7.1.exe",
         "installer_name": "",
         "changelog": [
-            "-NUEVA FUNCIÓN SERVIDOR,(PostgreSQL) CON SOPORTE  PARA VARIOS CLIENTES+DE 10",
-            "-MEJORA EN ESTABILIDAD Y FUNCIONAL",
-            "-REVISADAS REGLAS Y SOPORTE DE DIVISIONES"
+            "-NUEVA FUNCIÓN SERVIDOR,(PostgreSQL) CON SOPORTE  PARA VARIOS CLIENTES",
+            "-MEJORA EN ESTABILIDAD Y FUNCIONAL."
         ]
     },
     "history": []
