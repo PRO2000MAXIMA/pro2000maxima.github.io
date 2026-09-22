@@ -6,7 +6,8 @@
         "installer_name": "",
         "changelog": [
             "-NUEVA FUNCIÓN SERVIDOR,(PostgreSQL) CON SOPORTE  PARA VARIOS CLIENTES",
-            "-MEJORA EN ESTABILIDAD Y FUNCIONAL."
+            "-MEJORA EN ESTABILIDAD Y FUNCIONAL.",
+            "-NUEVA REGLA SEGURA TRAVESAÑOS"
         ]
     },
     "history": []
