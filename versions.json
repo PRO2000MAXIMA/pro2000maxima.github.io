@@ -1,8 +1,8 @@
 {
     "latest": {
-        "version": "v7.7.7.2",
+        "version": "v7.7.7.3",
         "date": "",
-        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.7.7.2/PRO-2000_Installer_v7.7.7.2.exe",
+        "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.7.7.3/PRO-2000_Installer_v7.7.7.3.exe",
         "installer_name": "",
         "changelog": [
             "-NUEVA FUNCIÓN SERVIDOR,(PostgreSQL) CON SOPORTE  PARA VARIOS CLIENTES",
