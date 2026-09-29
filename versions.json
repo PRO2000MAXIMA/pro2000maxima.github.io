@@ -7,7 +7,8 @@
         "changelog": [
             "-NUEVA FUNCIÓN SERVIDOR,(PostgreSQL) CON SOPORTE  PARA VARIOS CLIENTES.",
             "-NUEVA REGLA SEGURA TRAVESAÑOS",
-            "-AÑADIDO DIALOGO DE DIVISIONES"
+            "-AÑADIDO DIALOGO DE DIVISIONES",
+            "-FIJOS LATERALES +2HOJAS AUTO"
         ]
     },
     "history": []
