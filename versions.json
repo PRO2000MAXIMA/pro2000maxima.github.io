@@ -5,10 +5,10 @@
         "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.7.7.8/PRO-2000_Installer_v7.7.7.8.exe",
         "installer_name": "",
         "changelog": [
-            "-NUEVA REGLA SEGURA TRAVESAÑOS",
             "-AÑADIDO DIALOGO DE DIVISIONES",
             "-FIJOS LATERALES +2HOJAS AUTO",
-            "-MACROS MANUALES"
+            "-MACROS MANUALES",
+            "-MEJOR ESTABILIDAD"
         ]
     },
     "history": []
