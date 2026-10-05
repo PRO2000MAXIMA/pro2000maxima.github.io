@@ -5,10 +5,8 @@
         "url": "https://github.com/PRO2000MAXIMA/pro2000maxima.github.io/releases/download/v7.7.7.9/PRO-2000_Installer_v7.7.7.9.exe",
         "installer_name": "",
         "changelog": [
-            "-AÑADIDO DIALOGO DE DIVISIONES",
-            "-FIJOS LATERALES +2HOJAS AUTO",
-            "-MACROS MANUALES",
-            "-MEJOR ESTABILIDAD"
+            "-MEJORA EN GENERACIÓN DE CSV MAQUINA CNC",
+            "-PERMISOS DE USUSARIOS ACTUALIZADOS -"
         ]
     },
     "history": []
