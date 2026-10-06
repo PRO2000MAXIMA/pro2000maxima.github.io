@@ -6,7 +6,8 @@
         "installer_name": "",
         "changelog": [
             "-MEJORA EN GENERACIÓN DE CSV MAQUINA CNC",
-            "-PERMISOS DE USUSARIOS ACTUALIZADOS -"
+            "-PERMISOS DE USUSARIOS ACTUALIZADOS -",
+            "-A84H0 ACTUALIZADA"
         ]
     },
     "history": []
